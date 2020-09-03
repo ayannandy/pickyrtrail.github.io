@@ -1,0 +1,44 @@
+/* img collector https://source.unsplash.com/1600x900/?nature,travel */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 50rem;
+    background-image: url("img/banner.jpg");
+    /* background-attachment: fixed; */
+   
+
+}
+
+.navbar{
+    height: 6rem;
+    font-size: 2rem;
+    position: fixed;
+    width: 99vw;
+    
+}
+.navbar-brand{
+    font-size: 2rem ;
+    padding-left: 2rem;
+}
+.navbar-light{
+    color:#000;
+}
+
+.collapse{
+    right: 0;
+
+}
+
+.exp{
+    font-size: 4rem;
+    padding-top: 50vh;
+    color: red;
+
+}
