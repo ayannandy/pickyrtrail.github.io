@@ -1,71 +1,246 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="mycss.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <header>
-     <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
-        <a class="navbar-brand" href="#">Brand name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link bg" href="#">Link</a>
-            </li>
-          </ul>
-          
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="mycss.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
+      <a class="navbar-brand" href="#">Brand name</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bg" href="#">Link</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="text-center exp">Explore</div>
+  </header>
+
+  <!-- main body -->
+  <div id="txt"> recommendeds</div>
+
+  <!-- crousel for card -->
+  <div class="card_holder">
+   <div class="row p-0 m-0">
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0 " style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
         </div>
-      </nav>
-      <div class="text-center exp">Explore</div>
-    </header>
-    <p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>p>lorem</p><br>
-    <!-- main body -->
-    <!-- Optional JavaScript -->
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
 
-$(document).ready(function () {
-  $(window).scroll(function(){
-    $("nav").toggleClass("scrolled", $(this).scrollTop() > 500);
-    $(".bg").toggleClass("nav_white", $(this).scrollTop() > 500);
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+      <div class="card p-0 m-0" style="width: 100%; ">
+        <div class="img_container p-0 m-0">
+          <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+          <div class="price"></div>
+          <div class="date"></div>
+
+        </div>
+        <div class="card-body p-0 m-0">
+          <p class="card-text p-3">Ladak</p>
+        </div>
+      </div>
+     </div>
+     
+
+
+     </div>
+     
+   </div>
+  </div>
+  <!-- Optional JavaScript -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+        $(".bg").toggleClass("nav_white", $(this).scrollTop() > 100);
       });
-});
-    </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -23,7 +23,8 @@ header{
     height: 6rem;
     font-size: 2rem;
     position: fixed;
-    width: 99vw;
+    width: 100vw;
+    padding-right: 2rem;
     
 }
 .nav_bg{
@@ -32,6 +33,7 @@ header{
 }
 .scrolled{
     background-color: grey!important;
+    z-index: 1000;
 }
 .navbar-brand{
     font-size: 3rem ;
@@ -48,11 +50,12 @@ header{
 
 }
 .nav-link:hover{
-    color: white!important;
+    color: rgb(230, 207, 196)!important;
 }
 
 .nav_white{
-    color:red!important;
+    color:white!important;
+    background-color: gray;
     
 }
 
@@ -65,7 +68,57 @@ header{
 
 }
 
+#txt{
+    font-size: 3rem;
+    padding:3rem;
+    margin-left: 1rem;
 
+}
+
+
+/* card partiton */
+.card_holder{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.img_container{
+    overflow: hidden;
+    height: 15rem;
+    position: relative;
+    
+}
+.img_hover{
+    z-index: ;
+    transition: 0.5s ease;
+    position: absolute;
+}
+.img_hover:hover{
+    transform: scale(1.2);
+}
+.price{
+    font-size: 2rem;
+    z-index: 100;
+    position: absolute;
+    top: 80%;
+    left: 0.2rem;
+    display: block;
+}
+.date{
+    font-size: 2rem;
+    z-index: 100;
+    position: absolute;
+    top: 80%;
+    right: 0.2rem;
+    display: block;
+}
+
+.card-text{
+    font-size: 1.5rem;
+}
+
+.card:hover{
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0 , 0 , 0.5);
+}
 
 /* for small devices */
 @media screen and (max-width: 980px) {
