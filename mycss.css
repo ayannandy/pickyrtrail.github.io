@@ -68,7 +68,7 @@ header{
 
 
 /* for small devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
     .nav_white{
         background-color: #000;
     }
