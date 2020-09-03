@@ -1,5 +1,5 @@
 /* img collector https://source.unsplash.com/1600x900/?nature,travel */
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap'); */
 
 *{
     margin: 0;
@@ -29,8 +29,8 @@ header{
 .navbar-brand{
     font-size: 3rem ;
     padding-left: 2rem;
-    font-family: 'Grandstander', cursive;
-    font-weight: 500;
+  
+    
 }
 .navbar-light{
     color:#000;
@@ -52,8 +52,3 @@ header{
 
 /* for small devices */
 
-@media screen and (min-width: 480px) {
-    body {
-      background-color: lightgreen;
-    }
-  }
