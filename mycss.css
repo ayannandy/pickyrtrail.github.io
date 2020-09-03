@@ -26,6 +26,13 @@ header{
     width: 99vw;
     
 }
+.nav_bg{
+    transition: 750ms ease;
+    background:transparent!important;
+}
+.scrolled{
+    background-color: grey!important;
+}
 .navbar-brand{
     font-size: 3rem ;
     padding-left: 2rem;
@@ -40,6 +47,15 @@ header{
     right: 0;
 
 }
+.nav-link:hover{
+    color: white!important;
+}
+
+.nav_white{
+    color:white!important;
+}
+
+
 
 .exp{
     font-size: 4rem;
@@ -51,4 +67,3 @@ header{
 
 
 /* for small devices */
-
