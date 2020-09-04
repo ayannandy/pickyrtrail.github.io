@@ -122,6 +122,7 @@ header{
 
 
 .clints{
+    width: 100vw;
 	display: flex;
 	justify-content: space-around;
     align-items: center;
@@ -142,8 +143,8 @@ header{
 
 }
 .clint-item{
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -155,6 +156,10 @@ header{
 @media screen and (max-width: 776px) {
     .nav_white{
         background-color: #000;
+    }
+    .clints{
+        padding-left: 0.6rem;
+        padding-right: 3rem;
     }
     
   }
