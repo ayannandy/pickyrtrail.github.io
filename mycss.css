@@ -122,11 +122,10 @@ header{
 
 
 .clints{
+    height: 30rem;
     width: 100vw;
-	display: flex;
-	justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
+   ;
+	
     background: #000;
 }
 
@@ -136,20 +135,11 @@ header{
     background-color: #000;
     padding: 2rem;
 }
-.clints img{
+.row img {
     height: 100%;
-    
-    
-
-}
-.clint-item{
-    height: 10rem;
-    width: 10rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 3rem;
-
+    width: 100%;
+	
+	
 }
 
 /* for small devices */
@@ -157,9 +147,14 @@ header{
     .nav_white{
         background-color: #000;
     }
-    .clints{
-        padding-left: 0.6rem;
-        padding-right: 3rem;
+    .hover_effect {
+        width: 9rem;
+        height: 9rem;
+        overflow: hidden;
+        position: relative;
+        margin-right: 50px;
     }
+    
+    
     
   }
