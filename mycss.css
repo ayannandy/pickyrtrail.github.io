@@ -121,6 +121,10 @@ header{
 }
 
 
+
+.c-container{
+    background-color: #000;
+}
 .clints{
     height: auto;
     /* width: 100vw; */
@@ -148,6 +152,15 @@ header{
     width: 100%;
 	transform: scale(0.7);
 	
+}
+.row2{
+    border-bottom:1px solid white;
+}
+
+.band_logo_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* for small devices */
