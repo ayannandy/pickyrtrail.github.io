@@ -88,7 +88,7 @@ header{
     
 }
 .img_hover{
-    z-index: ;
+    z-index:100 ;
     transition: 0.5s ease;
     position: absolute;
 }
@@ -120,9 +120,43 @@ header{
     box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0 , 0 , 0.5);
 }
 
+
+.clints{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background: #000;
+}
+
+.c_title{
+    font-size: 2rem;
+    color: white;
+    background-color: #000;
+    padding: 2rem;
+}
+.clints img{
+    height: 100%;
+    
+    
+
+}
+.clint-item{
+    height: 15rem;
+    width: 15rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+
+}
+
 /* for small devices */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 776px) {
     .nav_white{
         background-color: #000;
+    }
+    .clints{
+        flex-direction: column;
     }
   }
