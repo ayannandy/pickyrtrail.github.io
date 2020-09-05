@@ -18,14 +18,17 @@ header{
    
 
 }
-
+.cross{
+    text-align: right;
+}
 .navbar{
     height: 6rem;
     font-size: 2rem;
     position: fixed;
     width: 100vw;
     padding-right: 2rem;
-    
+    text-align: left;
+    z-index:1000 ;
 }
 .nav_bg{
     transition: 750ms ease;
@@ -37,7 +40,8 @@ header{
 }
 .navbar-brand{
     font-size: 3rem ;
-    padding-left: 2rem;
+    padding-top: 0.2rem;
+    
   
     
 }
@@ -49,9 +53,21 @@ header{
     right: 0;
 
 }
-.nav-link:hover{
-    color: rgb(230, 207, 196)!important;
+.w3-border-right{
+    background-color: lightcoral;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30vw;
+    z-index: 200000000000;
+    
 }
+. w3-teal{
+    background-color: transparent;
+}
+
 
 .nav_white{
     color:white!important;
@@ -196,17 +212,9 @@ footer .f_body a{
 
 /* for small devices */
 @media screen and (max-width: 776px) {
-    .nav_white{
-        background-color: #000;
+    .w3-border-right{
+        width: 60vw;
     }
-    .hover_effect {
-        width: 9rem;
-        height: 9rem;
-        overflow: hidden;
-        position: relative;
-        margin-right: 50px;
-    }
-    
     
     
   }

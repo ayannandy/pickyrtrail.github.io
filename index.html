@@ -18,36 +18,18 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
-      <a class="navbar-brand" href="#">Brand name</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link bg" href="#">Link</a>
-          </li>
-        </ul>
-
+      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <span onclick="w3_close()" class="btn btn-outline-dangerw3-bar-item cross"> <i class="fas fa-2x fa-times"></i></span>
+        <a href="#" class="text-light">Link 1</a>
+        <a href="#" class="text-light">Link 2</a>
+        <a href="#" class="text-light">Link 3</a>
       </div>
+      <div class="w3-teal">
+        <span class="btn btn-outline-danger mb-3" onclick="w3_open()"><i class="fas fa-bars fa-2x"></i></span>
+        <a class="navbar-brand ml-2" href="#">Brand name</a>
+      </div>
+      
+
     </nav>
     <div class="text-center exp">Explore</div>
   </header>
@@ -230,59 +212,72 @@
       <div class="row">
         <div class="col-3  ">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
         <div class="col-3 ">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
         <div class="col-3  ">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
         <div class="col-3">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
- 
+
       </div>
       <div class="row row2">
         <div class="col-4  ">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
         <div class="col-4  ">
 
-            <img src="img/logo4.png" alt="logo1">
-          
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
         <div class="col-4  ">
 
-          
-            <img src="img/logo4.png" alt="logo1">
-          
+
+          <img src="img/logo4.png" alt="logo1">
+
         </div>
-        
+
 
       </div>
     </div>
     <hr>
     <div class="row m-0 p-0">
       <div class="col-lg-6 col-sm-12 m-0 p-0 text-white pl-2">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, at! Ex minus quo asperiores rem cumque, recusandae cupiditate id dolorum repellendus, eius eos nisi, sint saepe. Natus deleniti distinctio praesentium aspernatur iste nobis dolorum quo necessitatibus vel quam rerum eaque consequatur totam, vero ipsam illo debitis, sequi dicta vitae cupiditate nesciunt! Quia quam, impedit officia assumenda magni id laudantium? Saepe, repellendus atque. Repellat odit alias rerum ab! Aut hic quasi recusandae aliquam a ratione repellat dicta ullam repudiandae non quo maiores eos veniam magni dignissimos saepe deleniti, neque iure et voluptas? Quibusdam, cupiditate recusandae eveniet quo porro nisi magni fugiat corporis qui ea, optio dolorum voluptatem ducimus, laborum sapiente neque facere! Maxime nemo ab fuga expedita unde corrupti! Repudiandae nemo ab natus itaque harum nihil provident perferendis, tenetur nulla molestias quis minima voluptates, commodi ducimus a accusantium facere, cum distinctio officia! Consequatur soluta dolorem odit rerum commodi at suscipit repellat sapiente numquam minima rem id, earum quaerat ducimus natus impedit placeat porro ratione officiis veniam unde nisi perferendis hic molestiae. Aliquam eum assumenda, in quidem incidunt accusamus fugiat officiis pariatur repellendus numquam quia praesentium id corrupti similique minima laudantium, culpa accusantium nobis non minus ullam quas quibusdam fuga. Vel, aperiam.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, at! Ex minus quo asperiores rem cumque,
+        recusandae cupiditate id dolorum repellendus, eius eos nisi, sint saepe. Natus deleniti distinctio praesentium
+        aspernatur iste nobis dolorum quo necessitatibus vel quam rerum eaque consequatur totam, vero ipsam illo
+        debitis, sequi dicta vitae cupiditate nesciunt! Quia quam, impedit officia assumenda magni id laudantium? Saepe,
+        repellendus atque. Repellat odit alias rerum ab! Aut hic quasi recusandae aliquam a ratione repellat dicta ullam
+        repudiandae non quo maiores eos veniam magni dignissimos saepe deleniti, neque iure et voluptas? Quibusdam,
+        cupiditate recusandae eveniet quo porro nisi magni fugiat corporis qui ea, optio dolorum voluptatem ducimus,
+        laborum sapiente neque facere! Maxime nemo ab fuga expedita unde corrupti! Repudiandae nemo ab natus itaque
+        harum nihil provident perferendis, tenetur nulla molestias quis minima voluptates, commodi ducimus a accusantium
+        facere, cum distinctio officia! Consequatur soluta dolorem odit rerum commodi at suscipit repellat sapiente
+        numquam minima rem id, earum quaerat ducimus natus impedit placeat porro ratione officiis veniam unde nisi
+        perferendis hic molestiae. Aliquam eum assumenda, in quidem incidunt accusamus fugiat officiis pariatur
+        repellendus numquam quia praesentium id corrupti similique minima laudantium, culpa accusantium nobis non minus
+        ullam quas quibusdam fuga. Vel, aperiam.
       </div>
       <div class="col-lg-6 col-sm-12 m-0 p-0 band_logo_2">
-        <img src="img/logo2.png"  class="img-fluid m-0 p-0"  alt="">
+        <img src="img/logo2.png" class="img-fluid m-0 p-0" alt="">
       </div>
     </div>
   </div>
@@ -314,7 +309,7 @@
           <p class="f_body"><a href="#">Cancellations</a></p>
           <p class="f_body"><a href="#">Sitemap</a></p>
           <p class="f_body"><a href="#">Contact us</a></p>
-          
+
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0">
           <p class="f_header">
@@ -326,7 +321,7 @@
             Tlak to us
           </p>
           <input type="email" name="email" placeholder="Enter Email">
-          
+
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0">
           <p class="f_header">
@@ -356,6 +351,13 @@
         $(".bg").toggleClass("nav_white", $(this).scrollTop() > 100);
       });
     });
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "flex";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
   </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
