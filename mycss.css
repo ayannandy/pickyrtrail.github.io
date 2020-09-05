@@ -134,7 +134,7 @@ header{
 }
 
 .col-4{
-    width:30vw!importent;
+    width:30vw!important;
 }
 
 .c_title{
@@ -162,6 +162,37 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+/* footer part */
+footer{
+    background-color: black;
+    
+}
+footer .row{
+    text-align: center;
+}
+footer .f_header{
+    color: rgb(136, 136, 136);
+    font-size: 1.8rem;
+}
+
+footer .f_body a{
+    color :white;
+    font-size: 1.3rem;  
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 4rem;
+    padding-top: 0.7rem;
+    
+}
+.icons i{
+    color: white;
+    font-size: 1.3rem;;
+}
+
 
 /* for small devices */
 @media screen and (max-width: 776px) {
