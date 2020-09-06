@@ -18,18 +18,17 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
-      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-        <span onclick="w3_close()" class="btn btn-outline-dangerw3-bar-item cross"> <i class="fas fa-2x fa-times"></i></span>
-        <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt" onmouseenter="hovereffect()" onmouseleave="hoverout()"></i><span id="onhover1" style="display: none;">Link 1</span></a>
-        <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt"></i>link2</a>
-        <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt"></i>Link 3</a>
-      </div>
-      <div class="w3-teal">
-        <span class="btn btn-outline-danger mb-3" onclick="w3_open()"><i class="fas fa-bars fa-2x"></i></span>
-        <a class="navbar-brand ml-2" href="#">Brand name</a>
-      </div>
-      
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar" onmouseenter="hovereffect()" onmouseleave="hoverout()" >
 
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span> </a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+          style="display:none;">Link 1</span></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+          style="display:none;">Link 1</span></a>
+      </div>
+      <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><span class="nav-brand">Brand Name</span></span> 
+      
     </nav>
     <div class="text-center exp">Explore</div>
   </header>
@@ -348,21 +347,52 @@
     $(document).ready(function () {
       $(window).scroll(function () {
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
-        $(".bg").toggleClass("nav_white", $(this).scrollTop() > 100);
+        $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
 
-      
+
     });
-    function hovereffect(){
-      dis=document.getElementById("onhover1");
-      dis.style.display = "inline";
+    function hovereffect() {
+       let dis=document.getElementsByClassName("onhover1");
+       
+       for(let i =0 ;i<dis.length;i++){
+        dis[i].style.display = "inline";
+        
+
+       }
+       
+       
+      
     }
-    function hoverout(){
-      dis=document.getElementById("onhover1");
-      dis.style.display = "none";
+    function hoverout() {
+      dis = document.getElementsByClassName("onhover1");
+      
+      for(let i =0 ;i<dis.length;i++){
+        dis[i].style.display = "none";
+       
+       }
     }
+    
     function w3_open() {
-      document.getElementById("mySidebar").style.display = "flex";
+      
+      dis = document.getElementsByClassName("onhover1");
+      let atag=document.getElementsByClassName("w3-button");
+      if (dis[0].style.display == "none"){
+      for(let i =0 ;i<dis.length;i++){
+        dis[i].style.display = "inline";
+        atag[i].style.display = "inline";
+        v=false;
+       }
+      }else{
+        for(let i =0 ;i<dis.length;i++){
+        dis[i].style.display = "none";
+        if (screen.width <= 776 ){
+          atag[i].style.display = "none";
+        }
+        v=true;
+       }
+      }
+      
     }
 
     function w3_close() {

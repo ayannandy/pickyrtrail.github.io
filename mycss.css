@@ -53,17 +53,40 @@ header{
     right: 0;
 
 }
-.w3-border-right{
-    background-color: lightcoral;
+.w3-sidebar{
+    display: flex;
     flex-direction: column;
+    /* background-color: transparent; */
     position: absolute;
-    top: 0;
+    top: 6rem;
     left: 0;
     height: 100vh;
-    width: 30vw;
-    z-index: 200000000000;
+    width: auto;
+    z-index: 20000;
+    padding: 1rem;
+    
     
 }
+.w3-sidebarab{
+    background-color: white;
+}
+
+
+.w3-sidebar a {
+    color: red;
+    text-decoration: none;
+    padding: 0.3rem;
+}
+.w3-sidebar a i{
+    background-color:seashell ;
+}
+
+.w3-sidebar a:hover{
+    border:white;
+    background-color: seashell;
+    border-radius: 1rem;
+}
+
 .w3-teal{
     background-color: transparent;
 }
@@ -220,6 +243,9 @@ footer .f_body a{
 @media screen and (max-width: 776px) {
     .w3-border-right{
         width: 60vw;
+    }
+    .w3-sidebar a {
+        display: none;
     }
     
     
