@@ -67,9 +67,7 @@ header{
     
     
 }
-.w3-sidebarab{
-    background-color: white;
-}
+
 
 
 .w3-sidebar a {
@@ -79,6 +77,8 @@ header{
 }
 .w3-sidebar a i{
     background-color:seashell ;
+    border:0.1rem solid red;
+    padding: 0.2rem;
 }
 
 .w3-sidebar a:hover{
@@ -247,6 +247,7 @@ footer .f_body a{
     .w3-sidebar a {
         display: none;
     }
+    
     
     
   }

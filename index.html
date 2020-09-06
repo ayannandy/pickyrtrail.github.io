@@ -376,20 +376,25 @@
     function w3_open() {
       
       dis = document.getElementsByClassName("onhover1");
-      let atag=document.getElementsByClassName("w3-button");
+      let atag=document.getElementsByClassName("w3-button  ");
+      let na=document.getElementsByClassName("w3-sidebar");
       if (dis[0].style.display == "none"){
       for(let i =0 ;i<dis.length;i++){
         dis[i].style.display = "inline";
         atag[i].style.display = "inline";
-        v=false;
+      
+        if (screen.width <= 776 ){
+          na[0].style.background="white";
+        }
        }
       }else{
         for(let i =0 ;i<dis.length;i++){
         dis[i].style.display = "none";
         if (screen.width <= 776 ){
           atag[i].style.display = "none";
+          na[0].style.background="transparent";
         }
-        v=true;
+      
        }
       }
       
