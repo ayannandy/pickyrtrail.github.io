@@ -64,7 +64,7 @@ header{
     z-index: 200000000000;
     
 }
-. w3-teal{
+.w3-teal{
     background-color: transparent;
 }
 
@@ -210,6 +210,11 @@ footer .f_body a{
     font-size: 1.3rem;;
 }
 
+/* for slidebar toggle */
+
+.bag{
+    display: inline;
+}
 
 /* for small devices */
 @media screen and (max-width: 776px) {

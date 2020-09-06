@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
       <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
         <span onclick="w3_close()" class="btn btn-outline-dangerw3-bar-item cross"> <i class="fas fa-2x fa-times"></i></span>
-        <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt"></i>link1</a>
+        <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt" onmouseenter="hovereffect()" onmouseleave="hoverout()"></i><span id="onhover1" style="display: none;">Link 1</span></a>
         <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt"></i>link2</a>
         <a href="#" class="text-light"><i class="fas mx-2 fa-sign-in-alt"></i>Link 3</a>
       </div>
@@ -350,7 +350,17 @@
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $(".bg").toggleClass("nav_white", $(this).scrollTop() > 100);
       });
+
+      
     });
+    function hovereffect(){
+      dis=document.getElementById("onhover1");
+      dis.style.display = "inline";
+    }
+    function hoverout(){
+      dis=document.getElementById("onhover1");
+      dis.style.display = "none";
+    }
     function w3_open() {
       document.getElementById("mySidebar").style.display = "flex";
     }
