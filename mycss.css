@@ -74,8 +74,10 @@ header{
     color: red;
     text-decoration: none;
     padding: 0.3rem;
-    background-color: lemonchiffon;
+    background-color: white;
     margin: 0.3rem;
+    border-radius: 2rem;
+
 }
 .w3-sidebar a i{
     background-color:seashell ;
