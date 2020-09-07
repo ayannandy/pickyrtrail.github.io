@@ -74,6 +74,8 @@ header{
     color: red;
     text-decoration: none;
     padding: 0.3rem;
+    background-color: lemonchiffon;
+    margin: 0.3rem;
 }
 .w3-sidebar a i{
     background-color:seashell ;
