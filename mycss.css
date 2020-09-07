@@ -149,8 +149,8 @@ header{
     transition: 0.5s ease;
     position: absolute;
 }
-.img_hover:hover,
-.hoverimg{
+.card:hover .img_hover
+{
     transform: scale(1.2);
 }
 

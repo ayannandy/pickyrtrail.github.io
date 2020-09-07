@@ -46,7 +46,7 @@
         <div class="card p-0 m-0 " style="width: 100%; ">
           <div class="img_container p-0 m-0">
             <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
-            <div class="card-img-overla" onmouseenter="togglehover()">
+            <div class="card-img-overla" >
               
               <span class="card-text"> 12345</span>
               <span class="card-text">20-20-2020</span>
@@ -388,9 +388,7 @@
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
-      $(".card").hover(function(){
-        $("img_container").toggleClass("hoverimg");
-      });
+     
 
     });
     function hovereffect() {
@@ -445,9 +443,7 @@
       document.getElementById("mySidebar").style.display = "none";
     }
 
-    function togglehover(){
-
-    }
+    
   </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
