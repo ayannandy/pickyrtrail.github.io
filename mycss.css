@@ -10,8 +10,13 @@ html{
     font-size: 62.5%;
 }
 header{
-    height: 50rem;
+    height: 40rem;
     background-image: url("img/banner.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     /* background-attachment: fixed; */
     display: grid;
     place-items: center;
