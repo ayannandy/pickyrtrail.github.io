@@ -337,6 +337,24 @@ footer .f_body a{
 .Visa{
     font-size: 2rem;
     font-weight: 450;
+
+}
+
+.activity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.plan{
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding:0 2rem ;
+}
+.plan:hover{
+   
+    
+    
     
 }
 /* left fixed price */
@@ -346,7 +364,7 @@ footer .f_body a{
     top: 6rem;
     right: 5rem;
     height: 20rem;
-    width: 32rem ;
+    width: 30rem ;
 }
 
 .card_price{
