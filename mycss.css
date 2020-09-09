@@ -305,6 +305,7 @@ footer .f_body a{
     padding: 1rem;
     margin-left: 4rem ;
     width: 90% ;
+    height: 120rem;
 }
 
 .card_galary{
@@ -364,4 +365,19 @@ footer .f_body a{
     border-radius: 2rem;
     font-weight: 500;
     width: 100%;
+}
+
+.for_trip_pc{
+   position: absolute;
+   top:30rem;
+   left: 2rem;
+   margin-left: 6rem;
+  
+}
+.for_trip{
+    /* position: absolute;
+    
+    left:1rem; */
+   
+   
 }

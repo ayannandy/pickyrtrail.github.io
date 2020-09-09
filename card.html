@@ -36,9 +36,9 @@
 
     <!-- navigation panel end -->
 
-
-    <div class="card_container">
-        <div class="card_galary row p-0 m-0">
+<div style="display: block;">
+    <div class="card_container container" >
+        <div class="card_galary row p-0 m-0" >
             <div class="col-lg-4 col-12 ">
                 <video width="320" height="240" controls>
                     <source src="video/Nature-clip short_nikon D5100.mp4" type="video/mp4">
@@ -59,6 +59,18 @@
             
         </div>
     </div>
+</div>
+    <div class="container-fluid for_trip row bg-warning ">
+        <div class="col-lg-9 col-12">
+            <p>2N Puducherry . 1N Mahabalipuram</p>
+            <h2>Thiland Road Trip</h2>
+
+        </div>
+        <div class="col-lg-3 col-0">
+            <h2>route map</h2>
+        </div>
+    </div>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,11 +85,12 @@
             if (screen.width >= 776) {
                 $(".card_price").addClass("fixedposition");
                 $(".card_container").addClass("card_container_pc");
+                $(".for_trip").addClass("for_trip_pc");
             }else(
                 $(".card_container").addClass("card_container_mobile")
             )
 
-
+            
         });
         function hovereffect() {
             let dis = document.getElementsByClassName("onhover1");
