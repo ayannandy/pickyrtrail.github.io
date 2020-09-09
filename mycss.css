@@ -370,9 +370,15 @@ footer .f_body a{
 .for_trip_pc{
    position: absolute;
    top:30rem;
-   left: 2rem;
-   margin-left: 6rem;
+   
   
+}
+.for_trip_pc p{
+    padding-left: 5rem;
+}
+.for_trip_pc h2{
+    padding-left: 5rem;
+    font-size: 3rem;
 }
 .for_trip{
     /* position: absolute;
