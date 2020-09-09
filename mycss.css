@@ -464,12 +464,10 @@ footer .f_body a{
 }
     
 .datacardbox .header{
-    height: 5rem;
+    
     font-size: 2rem;
     font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
     background-color: #ebeef2;
     border: 1px solid black;
     border-bottom: none;
@@ -480,6 +478,7 @@ footer .f_body a{
 }
 .datacardbox .header .right{
     padding-right: 1rem;
+    padding-left: 1rem;
     text-align: right;
 }
 .datacardbox .datacardbody{
