@@ -269,10 +269,17 @@ footer .f_body a{
     .w3-sidebar a {
         display: none;
     }
+
+    .card_price{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
     
-    
-    
-  }
+}    
 
 
 
@@ -282,104 +289,54 @@ footer .f_body a{
 
   /* css for card page */
 
-  .card_main_container{
+
+.card_container_mobile{
     position: absolute;
-    top:6.1rem;
-    left:0;
-    margin: 0rem 5rem;
+    top: 6rem;
+    /* left:; */
+    padding: 1rem;
+    /* margin-left: ; */
+    width: 100% ;
 }
-.card_main_container video {
- width: 50%;
- height: 100%;
- padding: 0rem 0.5rem;
-}
-.card_main_container img{
-    width: 50%;
-    height: 100%;  
-    padding: 0rem 0.5rem;
+.card_container_pc{
+    position: absolute;
+    top: 6rem;
+    left:2rem;
+    padding: 1rem;
+    margin-left: 4rem ;
+    width: 90% ;
 }
 
 .card_galary{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#trip_id{
-    font-size: 2.2rem;
-    font-weight: 500;
-    margin-top: 1rem;;
-}
-
-.trip_type{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.car_type{
-    font-size: 1.8rem;
-    text-align: center;
-    border: 1px solid black;
-    margin: 0.3rem 0.9rem;
-    border-radius: 20px;
-    padding: 0.5rem;
-}
-
-
-
-.itinerary{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.Visa{
-    font-size: 2rem;
-    font-weight: 450;
-
-}
-
-.activity{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 3rem;
-    background-color: #fafdff;
     
 }
-.plan{
-    font-size: 1.5rem;
-    font-weight: 400;
-    cursor: pointer;
-    padding:0 2rem ;
-    
-    
+.card_galary video{
+    width: 100%;
+    height: auto;
 }
-.plan:hover{
-   border:1px solid red;
-   border-radius: 20px;
-   box-shadow: 0 0 0.5rem 0.1rem rgba(255, 0, 0, 0.5);
-    
-    
-}
-/* left fixed price */
 
-.card_price__main{
-    position:fixed;
-    top: 6rem;
-    right: 5rem;
+
+
+.card_galary img{
+    width: 100%;
+    height: auto;
+}
+.fixedposition{
+    position: fixed;
+    top: 7rem;
+    right: 3rem;
+    width: 30rem;
     height: 20rem;
-    width: 30rem ;
+    padding: 1rem;
 }
-
 .card_price{
-    display: flex;
-    flex-direction: column;
-    border: 0.2rem solid black;
+    border: 1px solid black;
+    
+    
 }
-.card_price__big{
-    margin-top: 2rem;
+  
+  .card_price__big{
+    
     background-color: #e2f2ff;
     padding:0 1rem ;
 }
@@ -403,6 +360,8 @@ footer .f_body a{
 }
 
 .card_price button{
-    font-size: 1.8rem;
+    font-size: 2rem!important;
     border-radius: 2rem;
+    font-weight: 500;
+    width: 100%;
 }
