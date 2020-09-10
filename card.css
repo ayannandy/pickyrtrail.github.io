@@ -120,11 +120,19 @@
 }
 .car_type{
     font-size: 1.8rem;
+    font-weight: 700;
     text-align: center;
     border: 1px solid black;
     margin: 0.3rem 0.9rem;
     border-radius: 20px;
     padding: 0.5rem;
+}
+.car_type:hover{
+    color: #008cff;
+    font-weight: 700;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid blue;
+    border-radius: 34px;
 }
 
 .itinerary{
