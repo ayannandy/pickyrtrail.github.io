@@ -190,7 +190,10 @@
             </div>
 
         </div>
-        <div class="col-lg-3 ">
+        <div class="col-lg-3 route "  style="
+        position: fixed;
+        right: 0rem;
+    ">
             <h1>Route Overview</h1>
             <div class="routemap">
 
@@ -230,9 +233,11 @@
                 $(".card_price").addClass("fixedposition");
                 $(".card_container").addClass("card_container_pc");
                 $(".for_trip").addClass("for_trip_pc");
-            } else (
-                $(".card_container").addClass("card_container_mobile")
-            )
+            } else {
+                $(".card_container").addClass("card_container_mobile");
+
+                $(".route")[0].style.display="none";
+            }
 
 
         });
