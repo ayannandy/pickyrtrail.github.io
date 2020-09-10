@@ -26,14 +26,17 @@
 }
 .card_galary video{
     width: 100%;
-    height: auto;
+    height: 20rem;
+    object-fit: cover;
+    
 }
 
 
 
 .card_galary img{
     width: 100%;
-    height: auto;
+    height: 20rem;
+    /* margin-left: 9rem; */
 }
 .fixedposition{
     position: fixed;
@@ -103,7 +106,7 @@
    
 }
 .for_trip hr{
-    width: 84%;
+    width: 92%;
     margin-left: 7rem;
 }
 .trip_type{
