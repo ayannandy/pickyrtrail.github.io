@@ -133,6 +133,20 @@
     align-items: center;
     font-size: 2rem;
 }
+.Visa{
+    font-size: 2rem;
+    font-weight: 450;
+    border-bottom: 3px blue;
+
+}
+.Visa:hover{
+    color: blue;
+    
+    border-bottom: 3px blue;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
 
 .activity{
    
@@ -148,16 +162,18 @@
 }
 .plan{
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     cursor: pointer;
     padding:0 2rem ;
     
     
+    
 }
 .plan:hover{
-   border:1px solid red;
-   border-radius: 20px;
-   box-shadow: 0 0 0.5rem 0.1rem rgba(255, 0, 0, 0.5);
+    color: #008cff;
+    font-weight: 700;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 34px;
     
     
 }
