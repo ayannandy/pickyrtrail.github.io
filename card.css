@@ -20,14 +20,18 @@
 }
 
 .card_galary{
-    width: 100%;
+    width: 111%;
     height: auto;
+    position: absolute;
+    right: -11%;
     
 }
 .card_galary video{
     width: 100%;
     height: 20rem;
     object-fit: cover;
+    
+
     
 }
 
@@ -106,7 +110,7 @@
    
 }
 .for_trip hr{
-    width: 92%;
+    width: 84%;
     margin-left: 7rem;
 }
 .trip_type{
@@ -135,6 +139,10 @@
     height: 3rem;
     background-color: #fafdff;
     margin-left: 7rem;
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     
 }
@@ -176,6 +184,7 @@
 /* data card patter */
 .datacardbox {
     padding:2rem 4rem;
+    width: 92%;
     
 }
     
