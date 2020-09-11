@@ -153,12 +153,12 @@
     border-bottom: 3px blue;
 
 }
-.Visa:hover{
-    color: blue;
-    
-    border-bottom: 3px blue;
-    transition: 0.5s ease-in;
-    cursor: pointer;
+ .active2{
+    color: #008cff;
+    font-weight: 700;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 34px;
+    padding: 0 1rem;
 }
 
 
