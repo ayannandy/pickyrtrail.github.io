@@ -123,6 +123,7 @@
     border: none;
     list-style: none;
     text-align: center;
+    outline: 0;
 }
 .car_type{
     font-size: 1.8rem;
