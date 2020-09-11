@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <title>Hello, world!</title>
+    <style>
+        a:hover{
+    text-decoration: none;
+}
+    </style>
 </head>
 
 <body>
@@ -95,18 +100,18 @@
             <hr>
             <div class="itinerary">
 
-                <div class="Visa active2">Itinerary</div>
-                <div class="Visa">Visa Policies</div>
-                <div class="Visa"> Similar Pakages</div>
+                <div class="Visa active2" onclick="savesubcat()">Itinerary</div>
+                <div class="Visa"><a href="#" onclick="savesubcat()">Visa Policies</a></div>
+                <div class="Visa"> <a href="#" onclick="savesubcat()">Similar Pakages</a></div>
             </div>
             <hr>
             <div class="activity ">
-                <div class="plan active" data-toggle="collapse" data-target="#home">Day plan</div>
-                <div class="plan" data-toggle="collapse" data-target="#worg">flights</div>
-                <div class="plan">Car</div>
-                <div class="plan">Hotels</div>
-                <div class="plan">Activity</div>
-                <div class="plan">Events</div>
+                <div class="plan active" data-toggle="collapse" data-target="#home" onclick="savesubcat()">Day plan</div>
+                <div class="plan" ><a href="javascript:void(0)" onclick="savesubcat()">flights</a></div>
+                <div class="plan"><a href="#" onclick="savesubcat()">Car</a></div>
+                <div class="plan"><a href="#" onclick="savesubcat()">Hotels</a></div>
+                <div class="plan"><a href="#" onclick="savesubcat()">Activity</a></div>
+                <div class="plan"><a href="#" onclick="savesubcat()">Events</a></div>
             </div>
 
             <div class="row datacard" id="home">
@@ -259,8 +264,21 @@
                 $(".route")[0].style.display = "none";
             }
 
+            $(".activity .plan").on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+            $(".itinerary .Visa").on('click',function(){
+                $(this).siblings().removeClass('active2');
+                $(this).addClass('active2');
+            });
+
+
 
         });
+        function savesubcat(){
+            return null;
+        }
         function hovereffect() {
             let dis = document.getElementsByClassName("onhover1");
 
@@ -324,6 +342,19 @@
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace("active", "");
                 this.className += " active";
+            });
+        }
+        var divContainer = document.getElementById("itinerary");
+
+        // Get all buttons with class="btn" inside the container
+        var btn = btnContainer.getElementsByClassName("visa");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btn[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active2");
+                current[0].className = current[0].className.replace("active2", "");
+                this.className += " active2";
             });
         }
     </script>
