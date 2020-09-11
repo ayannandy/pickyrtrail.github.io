@@ -152,10 +152,11 @@
     font-weight: 700;
     /* transition: 1s ease-in; */
     cursor: pointer;
+    color: black;
 
 }
  .active2 {
-    color: #008cff;
+    color: #008cff!important;
     font-weight: 700;
     border-bottom: 2px solid #008cff;
 }
@@ -186,7 +187,7 @@
     
 }
  .active{
-    color: #008cff;
+    color: #008cff!important;
     font-weight: 700;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 34px;
