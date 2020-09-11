@@ -150,16 +150,17 @@
 .Visa{
     font-size: 2rem;
     font-weight: 450;
-    border-bottom: 3px blue;
+    transition: 1s linear;
+    cursor: pointer;
 
 }
  .active2{
     color: #008cff;
     font-weight: 700;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 34px;
-    padding: 0 1rem;
+    border-bottom: 2px solid #008cff;
 }
+    
+
 
 
 .activity{
