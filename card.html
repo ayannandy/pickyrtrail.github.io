@@ -36,7 +36,7 @@
     </nav>
 
     <!-- navigation panel end -->
-    
+
 
     <div style="display: block;">
         <div class="card_container container">
@@ -75,23 +75,23 @@
 
             <hr>
             <div class="itinerary">
-                
+
                 <div class="Visa">Itinerary</div>
                 <div class="Visa">Visa Policies</div>
                 <div class="Visa"> Similar Pakages</div>
             </div>
             <hr>
-            <div class="activity">
-                <span class="plan">Day plan</span>
-                <span class="plan">flights</span>
-                <span class="plan">Car</span>
-                <span class="plan">Hotels</span>
-                <span class="plan">Activity</span>
-                <span class="plan">Events</span>
+            <div class="activity ">
+                <div class="plan active" data-toggle="collapse" data-target="#home">Day plan</div>
+                <div class="plan" data-toggle="collapse" data-target="#worg">flights</div>
+                <div class="plan">Car</div>
+                <div class="plan">Hotels</div>
+                <div class="plan">Activity</div>
+                <div class="plan">Events</div>
             </div>
-            
-            <div class="row datacard">
-                
+
+            <div class="row datacard" id="home">
+
                 <div class="col-lg-12 col-12">
                     <div class="datacardbox">
                         <div class="header row ">
@@ -213,6 +213,7 @@
             </div>
         </div>
     </div>
+    <div id="work">work</div>    
 
 
 
@@ -224,6 +225,9 @@
             $(window).scroll(function () {
                 $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
                 $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
+            });
+            $('.active').click(function () {
+                $('.datacard').toggle('hide');
             });
 
             if (screen.width >= 776) {
@@ -290,7 +294,19 @@
             document.getElementById("mySidebar").style.display = "none";
         }
 
+        var btnContainer = document.getElementById("activity");
 
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("plan");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            });
+        }
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
