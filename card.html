@@ -14,7 +14,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <title>Hello, world!</title>
+    <style>
+        .model{
+            font-size: 1.5rem;
+        }
+        .model .fa{
+            padding: 5px;
+        }
+        .modal-title{
+            font-size: 2rem;
+        }
+        .modal-body input{
+            height: 3rem!important;
+            font-size: 1.6rem;
 
+        }
+        .modal-body button{
+            height: 3rem!important;
+            font-size: 1.8rem;
+            padding-bottom: 3.1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,8 +51,15 @@
             <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
                     style="display:none;">Link 1</span></a>
         </div>
-        <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><a
-                href="index.html"><span class="nav-brand">Brand Name</span></a></span>
+        <span class=" " onclick="w3_open()">
+            <i class="fas fa-bars mx-3 btn btn-outline-danger"></i>
+            <a href="index.html"><span class="nav-brand">Brand Name</span></a>
+        </span>
+        
+            <button type="button" class="btn btn-outline-danger  login" data-toggle="modal" data-target="#exampleModal">
+                Login
+              </button>
+        
 
     </nav>
 
@@ -96,10 +123,12 @@
             <hr>
             <div class="itinerary">
 
-                <div class="Visa active2" onclick="savesubcat()" data-toggle="collapse" data-target="#home" id="visa1">Itinerary
+                <div class="Visa active2" onclick="savesubcat()" data-toggle="collapse" data-target="#home" id="visa1">
+                    Itinerary
                 </div>
-                <div class="Visa" onclick="savesub()" data-toggle="collapse" data-target="#policy" id="visa2">Visa Policies</div>
-                <div class="Visa" onclick="savesubcat()" id="visa3" >Similar Pakages</div>
+                <div class="Visa" onclick="savesub()" data-toggle="collapse" data-target="#policy" id="visa2">Visa
+                    Policies</div>
+                <div class="Visa" onclick="savesubcat()" id="visa3">Similar Pakages</div>
             </div>
             <hr>
             <div class="activity ">
@@ -111,7 +140,7 @@
                 <div class="plan" onclick="savesubcat()" id="flight5">Events</div>
             </div>
 
-            <div class="row datacard" >
+            <div class="row datacard">
 
                 <div class="col-lg-12 col-12 cardboxbody" id="home">
                     <div class="datacardbox">
@@ -207,33 +236,45 @@
             </div>
             <div class="col-12 " id="policy" style="display: none;">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
                     doloremque unde, numquam aspernatur impedit eaque accusantium modi cum, sint asperiores a. Obcaecati
-                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi doloribus
-                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis et nihil
-                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat commodi
-                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a aperiam
+                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi
+                    doloribus
+                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis
+                    et nihil
+                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat
+                    commodi
+                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a
+                    aperiam
                     eligendi veritatis, alias molestiae odit sapiente cupiditate? Voluptatum odio aliquam hic veniam
                     voluptatibus cumque.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
                     doloremque unde, numquam aspernatur impedit eaque accusantium modi cum, sint asperiores a. Obcaecati
-                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi doloribus
-                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis et nihil
-                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat commodi
-                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a aperiam
+                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi
+                    doloribus
+                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis
+                    et nihil
+                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat
+                    commodi
+                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a
+                    aperiam
                     eligendi veritatis, alias molestiae odit sapiente cupiditate? Voluptatum odio aliquam hic veniam
                     voluptatibus cumque.
                 </p>
             </div>
             <div class="col-12 " id="similar" style="display: none;">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
-                   
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
+
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
                     .
                 </p>
             </div>
@@ -306,7 +347,39 @@
             </div>
         </div>
     </div>
-   
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign In</button>
+                        </div>
+                        <p class="hint-text"><a href="#">Forgot Password?</a></p>
+                    </form>
+                </div>
+                <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -341,122 +414,122 @@
             });
             $(".itinerary .Visa").on('click', function () {
                 $(this).siblings().removeClass('active2');
-                
+
                 $(this).addClass('active2');
-                
+
             });
 
-            $("#visa1").on("click",function(){
-                $(".cardboxbody").css("display","block");
-                $(".activity").css("display","flex");
-                $("#policy").css("display","none");
-                $("#similar").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                
-                
-            })
-            $("#flight6").on("click",function(){
-                $(".cardboxbody").css("display","block");
-                
-                $("#policy").css("display","none");
-                
+            $("#visa1").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+                $(".activity").css("display", "flex");
+                $("#policy").css("display", "none");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
 
             })
-            $("#visa2").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $(".activity").css("display","none");
-                $("#policy").css("display","block");
-                $("#similar").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                
+            $("#flight6").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+
+                $("#policy").css("display", "none");
+
+
             })
-            $("#visa3").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $(".activity").css("display","none");
-                $("#policy").css("display","none");
-                $("#similar").css("display","block");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                
+            $("#visa2").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $(".activity").css("display", "none");
+                $("#policy").css("display", "block");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
             })
-            
-            $("#flight").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $("#similar").css("display","none");
-                $("#flig").css("display","block");
-                $("#flig1").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                
+            $("#visa3").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $(".activity").css("display", "none");
+                $("#policy").css("display", "none");
+                $("#similar").css("display", "block");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
             })
-            $("#flight2").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","block");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                $("#similar").css("display","none");
+
+            $("#flight").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "block");
+                $("#flig1").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
             })
-            $("#flight6").on("click",function(){
-                $(".cardboxbody").css("display","block");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                $("#similar").css("display","none");
-                
+            $("#flight2").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "block");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
             })
-            $("#flight3").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","block");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","none");
-                $("#similar").css("display","none");
-                
+            $("#flight6").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
             })
-            $("#flight4").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","block");
-                $("#flig4").css("display","none");
-                $("#similar").css("display","none");
-                
+            $("#flight3").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "block");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
             })
-            $("#flight5").on("click",function(){
-                $(".cardboxbody").css("display","none");
-                $("#flig").css("display","none");
-                $("#flig1").css("display","none");
-                $("#flig2").css("display","none");
-                $("#flig3").css("display","none");
-                $("#flig4").css("display","block");
-                $("#similar").css("display","none");
-                
+            $("#flight4").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "block");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
             })
-            
+            $("#flight5").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "block");
+                $("#similar").css("display", "none");
+
+            })
+
         });
         function savesubcat() {
             return null;
         }
-        
+
         function hovereffect() {
             let dis = document.getElementsByClassName("onhover1");
 
@@ -509,7 +582,7 @@
             document.getElementById("mySidebar").style.display = "none";
         }
 
-      
+
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
