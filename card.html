@@ -99,7 +99,7 @@
                 <div class="Visa active2" onclick="savesubcat()" data-toggle="collapse" data-target="#home" id="visa1">Itinerary
                 </div>
                 <div class="Visa" onclick="savesub()" data-toggle="collapse" data-target="#policy" id="visa2">Visa Policies</div>
-                <div class="Visa" onclick="savesubcat()" >Similar Pakages</div>
+                <div class="Visa" onclick="savesubcat()" id="visa3" >Similar Pakages</div>
             </div>
             <hr>
             <div class="activity ">
@@ -227,6 +227,16 @@
                     voluptatibus cumque.
                 </p>
             </div>
+            <div class="col-12 " id="similar" style="display: none;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
+                   
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error voluptatum
+                    .
+                </p>
+            </div>
             <div class="col-12 " id="flig" style="display: none;">
                 <p>
                     flights0
@@ -340,7 +350,12 @@
                 $(".cardboxbody").css("display","block");
                 $(".activity").css("display","flex");
                 $("#policy").css("display","none");
+                $("#similar").css("display","none");
                 $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
                 
                 
             })
@@ -355,16 +370,30 @@
                 $(".cardboxbody").css("display","none");
                 $(".activity").css("display","none");
                 $("#policy").css("display","block");
+                $("#similar").css("display","none");
                 $("#flig").css("display","none");
                 $("#flig1").css("display","none");
                 $("#flig2").css("display","none");
                 $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
+                
+            })
+            $("#visa3").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                $(".activity").css("display","none");
+                $("#policy").css("display","none");
+                $("#similar").css("display","block");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
                 
             })
             
             $("#flight").on("click",function(){
                 $(".cardboxbody").css("display","none");
-                
+                $("#similar").css("display","none");
                 $("#flig").css("display","block");
                 $("#flig1").css("display","none");
                 $("#flig1").css("display","none");
@@ -380,6 +409,7 @@
                 $("#flig2").css("display","none");
                 $("#flig3").css("display","none");
                 $("#flig4").css("display","none");
+                $("#similar").css("display","none");
             })
             $("#flight6").on("click",function(){
                 $(".cardboxbody").css("display","block");
@@ -388,6 +418,7 @@
                 $("#flig2").css("display","none");
                 $("#flig3").css("display","none");
                 $("#flig4").css("display","none");
+                $("#similar").css("display","none");
                 
             })
             $("#flight3").on("click",function(){
@@ -397,6 +428,7 @@
                 $("#flig2").css("display","block");
                 $("#flig3").css("display","none");
                 $("#flig4").css("display","none");
+                $("#similar").css("display","none");
                 
             })
             $("#flight4").on("click",function(){
@@ -406,15 +438,17 @@
                 $("#flig2").css("display","none");
                 $("#flig3").css("display","block");
                 $("#flig4").css("display","none");
+                $("#similar").css("display","none");
                 
             })
-            $("#flight4").on("click",function(){
+            $("#flight5").on("click",function(){
                 $(".cardboxbody").css("display","none");
                 $("#flig").css("display","none");
                 $("#flig1").css("display","none");
                 $("#flig2").css("display","none");
                 $("#flig3").css("display","none");
                 $("#flig4").css("display","block");
+                $("#similar").css("display","none");
                 
             })
             
