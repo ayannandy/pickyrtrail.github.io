@@ -107,6 +107,13 @@ header{
     
 }
 
+.login{
+    font-size: 1.8rem;
+    position: absolute;
+    right: 5.5rem;
+    font-weight: 500;
+
+}
 
 
 .exp{
