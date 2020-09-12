@@ -103,12 +103,12 @@
             </div>
             <hr>
             <div class="activity ">
-                <div class="plan active" onclick="savesubcat()">Day plan</div>
-                <div class="plan" onclick="savesubcat()">flights</div>
-                <div class="plan" onclick="savesubcat()">Car</div>
-                <div class="plan" onclick="savesubcat()">Hotels</div>
-                <div class="plan" onclick="savesubcat()">Activity</div>
-                <div class="plan" onclick="savesubcat()">Events</div>
+                <div class="plan active" onclick="savesubcat()" id="flight6">Day plan</div>
+                <div class="plan" onclick="savesubcat()" id="flight">flights</div>
+                <div class="plan" onclick="savesubcat()" id="flight2">Car</div>
+                <div class="plan" onclick="savesubcat()" id="flight3">Hotels</div>
+                <div class="plan" onclick="savesubcat()" id="flight4">Activity</div>
+                <div class="plan" onclick="savesubcat()" id="flight5">Events</div>
             </div>
 
             <div class="row datacard" >
@@ -227,6 +227,46 @@
                     voluptatibus cumque.
                 </p>
             </div>
+            <div class="col-12 " id="flig" style="display: none;">
+                <p>
+                    flights0
+                </p>
+                <p>
+                    flights0
+                </p>
+            </div>
+            <div class="col-12 " id="flig1" style="display: none;">
+                <p>
+                    flights2
+                </p>
+                <p>
+                    flights2
+                </p>
+            </div>
+            <div class="col-12 " id="flig2" style="display: none;">
+                <p>
+                    flights1
+                </p>
+                <p>
+                    flights1
+                </p>
+            </div>
+            <div class="col-12 " id="flig3" style="display: none;">
+                <p>
+                    flight3
+                </p>
+                <p>
+                    flights3
+                </p>
+            </div>
+            <div class="col-12 " id="flig4" style="display: none;">
+                <p>
+                    flights4
+                </p>
+                <p>
+                    flights4
+                </p>
+            </div>
 
         </div>
         <div class="col-lg-3 route " style="
@@ -300,12 +340,84 @@
                 $(".cardboxbody").css("display","block");
                 $(".activity").css("display","flex");
                 $("#policy").css("display","none");
+                $("#flig").css("display","none");
+                
+                
+            })
+            $("#flight6").on("click",function(){
+                $(".cardboxbody").css("display","block");
+                
+                $("#policy").css("display","none");
+                
+
             })
             $("#visa2").on("click",function(){
                 $(".cardboxbody").css("display","none");
                 $(".activity").css("display","none");
                 $("#policy").css("display","block");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                
             })
+            
+            $("#flight").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                
+                $("#flig").css("display","block");
+                $("#flig1").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
+                
+            })
+            $("#flight2").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","block");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
+            })
+            $("#flight6").on("click",function(){
+                $(".cardboxbody").css("display","block");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
+                
+            })
+            $("#flight3").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","block");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","none");
+                
+            })
+            $("#flight4").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","block");
+                $("#flig4").css("display","none");
+                
+            })
+            $("#flight4").on("click",function(){
+                $(".cardboxbody").css("display","none");
+                $("#flig").css("display","none");
+                $("#flig1").css("display","none");
+                $("#flig2").css("display","none");
+                $("#flig3").css("display","none");
+                $("#flig4").css("display","block");
+                
+            })
+            
         });
         function savesubcat() {
             return null;
