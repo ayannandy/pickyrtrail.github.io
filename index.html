@@ -491,7 +491,7 @@
                         <p class="hint-text" style="font-size: 1.3rem;"><a href="#">Forgot Password?</a></p>
                     </form>
                 </div> 
-                <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 " data-toggle="modal" data-target="#exampleModal2" data-dismiss="#exampleModal">Create one</a></div>
+                <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 " data-toggle="modal" data-target="#exampleModal2" id="forlogin">Create one</a></div>
             </div>
             </div>
         </div>
@@ -556,7 +556,7 @@
                         
                     </form>
                 </div>
-                <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#exampleModal">Login Here</a></div>
+                <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#exampleModal" id="forsignup" >Login Here</a></div>
             </div>
             </div>
         </div>
@@ -568,6 +568,12 @@
   <script>
 
     $(document).ready(function () {
+      $('#forlogin').click(function(){
+        $('#exampleModal').modal('hide');
+      });
+      $('#forsignup').click(function(){
+        $('#exampleModal2').modal('hide');
+      });
       $(window).scroll(function () {
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
