@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color:#EC5B24;
+}
+header{
+    height: 40rem;
+    background-image: url("img/banner.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; */
+    display: grid;
+    place-items: center;
+   
+
+}
+.cross{
+    text-align: right;
+}
+.navbar{
+    height: 6rem;
+    font-size: 2rem;
+    position: relative;
+    
+    text-align: left;
+    z-index:1000 ;
+}
+.nav_bg{
+    transition: 750ms ease;
+    background:transparent!important;
+}
+.scrolled{
+    background-color: grey!important;
+    z-index: 1000;
+}
+.navbar-brand{
+    font-size: 3rem ;
+    padding-top: 0.2rem;
+    
+  
+    
+}
+.navbar-light{
+    color:#000;
+}
+
+.collapse{
+    right: 0;
+
+}
+.w3-sidebar{
+    display: flex;
+    flex-direction: column;
+    /* background-color: transparent; */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    z-index: 20000;
+    padding: 1rem;
+    
+    
+}
+
+
+
+.w3-sidebar a {
+    color: red;
+    text-decoration: none;
+    padding: 0.3rem;
+    background-color: white;
+    margin: 0.3rem;
+    border-radius: 2rem;
+
+}
+.w3-sidebar a i{
+    background-color:seashell ;
+    border:0.1rem solid red;
+    padding: 0.2rem;
+}
+
+.w3-sidebar a:hover{
+    border:white;
+    background-color: seashell;
+    border-radius: 1rem;
+}
+
+.w3-teal{
+    background-color: transparent;
+}
+
+
+.nav_white{
+    color:white!important;
+    background-color: gray;
+    
+}
+
+.login{
+    font-size: 1.8rem;
+    position: absolute;
+    right: 5.5rem;
+    font-weight: 500;
+
+}
+
+
+.exp{
+    font-size: 4rem;
+   
+    color: red;
+
+}
+
+#txt{
+    font-size: 3rem;
+    padding:3rem;
+    margin-left: 1rem;
+
+}
+
+/* login part */
+.model{
+    font-size: 1.8rem;
+}
+.model .fa{
+    padding: 5px;
+}
+.modal-title{
+    font-size: 2rem;
+}
+.modal-body input{
+    height: 3rem!important;
+    font-size: 1.6rem;
+
+}
+.modal-body button{
+    height: 3rem!important;
+    font-size: 1.8rem;
+    padding-bottom: 3.1rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.icons a{
+    text-decoration: none;
+
+}
+.icons .fa-facebook {
+    background: blue;
+    font-size: 5rem;
+    /* border-radius: 50%; */
+    border: none;
+}
+.icons .fa-facebook:hover{
+    background-color: white;
+    color: blue;
+}
+.icons .gmail {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gmail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icons .fa-instagram {
+    background: red;
+    font-size: 5rem;
+    /* border-radius: 50%; */
+    border: none;
+    background-repeat: no-repeat;
+}
+.icons .fa-instagram:hover {
+    background: white;
+    color: red;
+    
+}
+
+/* search bar  */
+
+#searchbar{
+    background: linear-gradient(45deg,#721053,#AD2E41);
+    width: auto;
+    height: 8rem;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0rem;
+}
+#searchbar input[type="text"]{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1.8rem;
+    border-style: none;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    padding: 0 1rem;
+   
+}
+#searchbar input[type="date"]{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1.8rem;
+    border-style: none;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    padding: 0 1rem;
+   
+}
+#searchbar input::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.1rem;
+    color: red;
+    background-color: gray;
+}
+#searchbar .underline{
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+}
+#searchbar .underline::after ,
+ #searchbar .underline::before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 1px;
+    position: absolute!important;
+    background: var(--color);
+    padding: 0 1rem;
+    /* -webkit-transition: .2s ease all;
+    transition: .2s ease all; */
+}
+
+#searchbar label{
+    color:var(--color);
+    font-size: 1.3rem;
+}
+.no_outline:focus{
+    outline: none;
+}
+#searchbar #searchbtn{
+      background-color: #EC5B24;
+      color: white;
+      font-size: 1.8rem;
+}

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="hotels.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+  <title>Hello, world!</title>
+  <style>
+    
+    
+</style>
+</head>
+
+<body>
+  
+
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar" style="display: none;"
+         >
+
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span> </a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span></a>
+      </div>
+      <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><span
+          class="nav-brand">Brand Name</span></span>
+          <button type="button" class="btn btn-outline-danger  login" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+
+    </nav>
+    
+    <div id="searchbar" class="row p-0 m-0">
+    <div class="col-lg-3 col-12 ">
+        <label for="place">Where</label>
+        <input type="text" name="destination" class="no_outline" id="destination" placeholder="Enter Destination or Hotel Name">
+        <span class="underline"></span>
+    </div>        
+    <div class="col-lg-2 col-12 ">
+        <label for="Cheakin">Chek-In</label>
+        <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
+        <span class="underline"></span>
+    </div>        
+    <div class="col-lg-2 col-12 ">
+        <label for="Cheakin">Chek-out</label>
+        <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
+        <span class="underline"></span>
+    </div> 
+    <div class="col-lg-3 col-12 ">
+        <label for="place" class="pl-1">Travelling as</label>
+        <label for="place" class="pl-5 ml-5">Guests</label>
+        <input type="text" name="room_guests" class="no_outline" id="room" value="solo    2 Guests 1 Room ">
+        <span class="underline"></span>
+    </div>
+    <div class="col-lg-2 col-12 ">
+        
+       <input type="button" value="Search"  class="btn" id="searchbtn">
+    </div>       
+    </div>
+    <div class="bg-danger" style="height: 1000px;">
+
+    </div>
+
+
+
+
+
+
+    <div class="modal fade m-0 p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign In</button>
+                        </div>
+                        <hr>
+                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+                        <div class="icons">
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="login100-social-item bg3 gmail">
+                                <img src="img/gmail.png" alt="">
+                            </a>
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <p class="hint-text" style="font-size: 1.3rem;"><a href="#">Forgot Password?</a></p>
+                    </form>
+                </div> 
+                <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 " data-toggle="modal" data-target="#exampleModal2" id="forlogin">Create one</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+  <div class="modal fade m-0 p-0" id="exampleModal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="email" class="form-control mx-5" name="email" placeholder="Email id" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="nnumber" class="form-control mx-5" name="mobile" placeholder="mobile no" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Confram Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign UP</button>
+                        </div>
+                        <hr>
+                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+                          <h5 class="text-center mb-5" style="font-size: 1.6rem;">Signup with</h5>
+                        <div class="icons">
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="login100-social-item bg3 gmail">
+                                <img src="img/gmail.png" alt="">
+                            </a>
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#exampleModal" id="forsignup" >Login Here</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('#forlogin').click(function(){
+        $('#exampleModal').modal('hide');
+      });
+      $('#forsignup').click(function(){
+        $('#exampleModal2').modal('hide');
+      });
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+        $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
+      });
+     
+      
+
+    });
+   
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "flex";
+
+      dis = document.getElementsByClassName("onhover1");
+      let atag = document.getElementsByClassName("w3-button  ");
+      let na = document.getElementsByClassName("w3-sidebar");
+      if (dis[0].style.display == "none") {
+        for (let i = 0; i < dis.length; i++) {
+          dis[i].style.display = "inline";
+          atag[i].style.display = "inline";
+
+          
+            na[0].style.background = "white";
+          
+        }
+      } else {
+        for (let i = 0; i < dis.length; i++) {
+          dis[i].style.display = "none";
+          
+            atag[i].style.display = "none";
+            na[0].style.background = "transparent";
+          
+        }
+      }
+
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
