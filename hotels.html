@@ -42,22 +42,22 @@
     </nav>
     
     <div id="searchbar" class="row p-0 m-0">
-    <div class="col-lg-3 col-12 ">
+    <div class="col-lg-3 col-12 " id="s1">
         <label for="place">Where</label>
         <input type="text" name="destination" class="no_outline" id="destination" placeholder="Enter Destination or Hotel Name">
         <span class="underline"></span>
     </div>        
-    <div class="col-lg-2 col-12 ">
+    <div class="col-lg-2 col-12 " id="s2">
         <label for="Cheakin">Chek-In</label>
         <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
         <span class="underline"></span>
     </div>        
-    <div class="col-lg-2 col-12 ">
+    <div class="col-lg-2 col-12 " id="s3">
         <label for="Cheakin">Chek-out</label>
         <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
         <span class="underline"></span>
     </div> 
-    <div class="col-lg-3 col-12 ">
+    <div class="col-lg-3 col-12 "id="s4">
         <label for="place" class="pl-1">Travelling as</label>
         <label for="place" class="pl-5 ml-5">Guests</label>
         <input type="text" name="room_guests" class="no_outline" id="room" value="solo    2 Guests 1 Room ">
@@ -204,7 +204,38 @@
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
      
-      
+      $("#s1").focusin(function(){
+        $(this).children("label").css("color","#EC5B24");
+       
+
+      });
+      $("#s1").focusout(function(){
+        $(this).children("label").css("color","white")
+      });
+      $("#s2").focusin(function(){
+        $(this).children("label").css("color","#EC5B24");
+        
+
+      });
+      $("#s2").focusout(function(){
+        $(this).children("label").css("color","white")
+      });
+      $("#s3").focusin(function(){
+        $(this).children("label").css("color","#EC5B24");
+        
+
+      });
+      $("#s3").focusout(function(){
+        $(this).children("label").css("color","white")
+      });
+      $("#s4").focusin(function(){
+        $(this).children("label").css("color","#EC5B24");
+        
+
+      });
+      $("#s4").focusout(function(){
+        $(this).children("label").css("color","white")
+      });
 
     });
    

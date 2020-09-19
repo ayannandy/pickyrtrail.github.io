@@ -236,13 +236,14 @@ header{
     bottom: 0;
     height: 0.1rem;
     color: red;
-    background-color: gray;
+   
 }
 #searchbar .underline{
     position: relative!important;
     top: 2px;
     display: block;
     width: 100%;
+    
 }
 #searchbar .underline::after ,
  #searchbar .underline::before {
@@ -251,14 +252,14 @@ header{
     width: 100%;
     bottom: 1px;
     position: absolute!important;
-    background: var(--color);
+    background: rgb(255,255,255);
     padding: 0 1rem;
     /* -webkit-transition: .2s ease all;
     transition: .2s ease all; */
 }
 
 #searchbar label{
-    color:var(--color);
+    color:white;
     font-size: 1.3rem;
 }
 .no_outline:focus{
