@@ -257,6 +257,23 @@ header{
     /* -webkit-transition: .2s ease all;
     transition: .2s ease all; */
 }
+.acti{
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+}
+.acti::before,
+.acti::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 1px;
+    position: absolute!important;
+    background: var(--color);
+    padding: 0 1rem;
+}
+
 
 #searchbar label{
     color:white;

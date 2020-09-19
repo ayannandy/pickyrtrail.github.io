@@ -44,7 +44,7 @@
     <div id="searchbar" class="row p-0 m-0">
     <div class="col-lg-3 col-12 " id="s1">
         <label for="place">Where</label>
-        <input type="text" name="destination" class="no_outline" id="destination" placeholder="Enter Destination or Hotel Name">
+        <input type="text" name="destination" class="no_outline" id="destination" placeholder="Enter Destination or Hotel Name" >
         <span class="underline"></span>
     </div>        
     <div class="col-lg-2 col-12 " id="s2">
@@ -206,11 +206,13 @@
      
       $("#s1").focusin(function(){
         $(this).children("label").css("color","#EC5B24");
+        $(this).children("underline").addClass("acti");
        
 
       });
       $("#s1").focusout(function(){
-        $(this).children("label").css("color","white")
+        $(this).children("label").css("color","white");
+        $(this).children("underline").removeClass("acti");
       });
       $("#s2").focusin(function(){
         $(this).children("label").css("color","#EC5B24");
@@ -236,6 +238,8 @@
       $("#s4").focusout(function(){
         $(this).children("label").css("color","white")
       });
+
+      
 
     });
    
