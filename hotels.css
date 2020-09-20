@@ -318,8 +318,11 @@ header{
 .dropdown-menu #guestlist{
 
 }
-.dropdown-menu #guestlist div p{
-
+.dropdown-menu  p{
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
 }
 .dropdown-menu #guestlist .adult .hea{
     display: inline;
@@ -334,4 +337,7 @@ header{
     align-items: center;
     padding-left: 2rem;
     font-size: 1.8rem;
+}
+.activemem{
+    border: 1px solid orangered;
 }

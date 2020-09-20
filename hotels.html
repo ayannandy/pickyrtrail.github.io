@@ -81,23 +81,24 @@
         </div>
         <div class="trheaad"> <span>Guests</span></div>
         <div id="guestlist">
-          <div class="adult">
+          <div class="adult" >
             <div class="hea">Adults</div>
-            <div class="heabody">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
+            <div class="heabody" id="adu">
+              <p onclick="val()" class="activemem">1</p>
+              <p onclick="val()">2</p>
+              <p onclick="val()">3</p>
+              <p onclick="val()">4</p>
+              <p onclick="val()">5</p>
+              <p onclick="val()">6</p>
+              <p onclick="val()">7</p>
+              <p onclick="val()">8</p>
+              <p onclick="val()">9</p>
             </div>
           </div>
           <div class="adult">
             <div class="hea">Childs</div>
-            <div class="heabody">
+            <div class="heabody" id="chi">
+              <p class="activemem">0</p>
               <p>1</p>
               <p>2</p>
               <p>3</p>
@@ -109,8 +110,8 @@
         <div class="trheaad"><span> Rooms</span></div>
         <div>
 
-          <div class="heabody">
-            <p>1</p>
+          <div class="heabody" id="room">
+            <p class="activemem">1</p>
             <p>2</p>
             <p>3</p>
             <p>4</p>
@@ -299,6 +300,22 @@
       });
 
       $('.dropdown-toggle').dropdown();
+
+      $("#adu p").on('click', function () {
+                $(this).siblings().removeClass('activemem');
+                
+                $(this).addClass('activemem');
+            });
+      $("#chi p").on('click', function () {
+                $(this).siblings().removeClass('activemem');
+                
+                $(this).addClass('activemem');
+            });
+      $("#room p").on('click', function () {
+                $(this).siblings().removeClass('activemem');
+                
+                $(this).addClass('activemem');
+            });
 
     });
 
