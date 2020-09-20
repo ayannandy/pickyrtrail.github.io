@@ -14,238 +14,299 @@
 
   <title>Hello, world!</title>
   <style>
-    
-    
-</style>
+
+
+  </style>
 </head>
 
 <body>
-  
 
-    <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
-      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar" style="display: none;"
-         >
 
-        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
-            style="display:none;">Link 1</span> </a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
-            style="display:none;">Link 1</span></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
-            style="display:none;">Link 1</span></a>
+  <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar" style="display: none;">
+
+      <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+          style="display:none;">Link 1</span> </a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+          style="display:none;">Link 1</span></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+          style="display:none;">Link 1</span></a>
+    </div>
+    <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><span
+        class="nav-brand">Brand Name</span></span>
+    <button type="button" class="btn btn-outline-danger  login" data-toggle="modal" data-target="#exampleModal">
+      Login
+    </button>
+
+  </nav>
+
+  <div id="searchbar" class="row p-0 m-0">
+    <div class="col-lg-3 col-12 dropdown" id="s1">
+      <label for="place">Where</label>
+      <input type="text" name="destination" autocomplete="off" class="no_outline dropdown-toggle" id="destination"
+        placeholder="Enter Destination or Hotel Name" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+      <span class="underline"></span>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
       </div>
-      <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><span
-          class="nav-brand">Brand Name</span></span>
-          <button type="button" class="btn btn-outline-danger  login" data-toggle="modal" data-target="#exampleModal">
-            Login
-          </button>
-
-    </nav>
-    
-    <div id="searchbar" class="row p-0 m-0">
-    <div class="col-lg-3 col-12 " id="s1">
-        <label for="place">Where</label>
-        <input type="text" name="destination" class="no_outline" id="destination" placeholder="Enter Destination or Hotel Name" >
-        <span class="underline"></span>
-    </div>        
+    </div>
     <div class="col-lg-2 col-12 " id="s2">
-        <label for="Cheakin">Chek-In</label>
-        <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
-        <span class="underline"></span>
-    </div>        
+      <label for="Cheakin">Chek-In</label>
+      <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
+      <span class="underline"></span>
+    </div>
     <div class="col-lg-2 col-12 " id="s3">
-        <label for="Cheakin">Chek-out</label>
-        <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
-        <span class="underline"></span>
-    </div> 
-    <div class="col-lg-3 col-12 "id="s4">
-        <label for="place" class="pl-1">Travelling as</label>
-        <label for="place" class="pl-5 ml-5">Guests</label>
-        <input type="text" name="room_guests" class="no_outline" id="room" value="solo    2 Guests 1 Room ">
-        <span class="underline"></span>
+      <label for="Cheakin">Chek-out</label>
+      <input type="date" name="cheakin" class="no_outline" id="cheakinin" placeholder="Enter Destination or Hotel Name">
+      <span class="underline"></span>
+    </div>
+    <div class="col-lg-3 col-12 " id="s4">
+      <label for="place" class="pl-1">Travelling as</label>
+      <label for="place" class="pl-5 ml-5">Guests</label>
+      <input type="text" name="room_guests" id="room" value="solo    2 Guests 1 Room " autocomplete="off"
+        class="no_outline dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+      <span class="underline"></span>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 150%;">
+        <div class="trheaad"> <span>Travelling as</span></div>
+        <div id="travelertype">
+          <div><input type="radio" name="traveler" id="t1"><span>solo</span></div>
+          <div><input type="radio" name="traveler" id="t2"><span>couple</span></div>
+          <div><input type="radio" name="traveler" id="t3"><span>Business</span></div>
+          <div><input type="radio" name="traveler" id="t4"><span>Friends</span></div>
+          <div><input type="radio" name="traveler" id="t5"><span>Family</span></div>
+        </div>
+        <div class="trheaad"> <span>Guests</span></div>
+        <div id="guestlist">
+          <div class="adult">
+            <div class="hea">Adults</div>
+            <div class="heabody">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+              <p>6</p>
+              <p>7</p>
+              <p>8</p>
+              <p>9</p>
+            </div>
+          </div>
+          <div class="adult">
+            <div class="hea">Childs</div>
+            <div class="heabody">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+        <div class="trheaad"><span> Rooms</span></div>
+        <div>
+
+          <div class="heabody">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-lg-2 col-12 ">
-        
-       <input type="button" value="Search"  class="btn" id="searchbtn">
-    </div>       
+
+      <input type="button" value="Search" class="btn" id="searchbtn">
     </div>
-    <div class="bg-danger" style="height: 1000px;">
+  </div>
+  <div class="bg-danger" style="height: 1000px;">
 
-    </div>
-
-
-
+  </div>
 
 
 
-    <div class="modal fade m-0 p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">				
-                    <h4 class="modal-title">Sign In</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group d-flex justify-content-center align-items-center">
-                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign In</button>
-                        </div>
-                        <hr>
-                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
-                        <div class="icons">
-                            <a href="#" class="login100-social-item bg3">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="login100-social-item bg3 gmail">
-                                <img src="img/gmail.png" alt="">
-                            </a>
-                            <a href="#" class="login100-social-item bg3">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <p class="hint-text" style="font-size: 1.3rem;"><a href="#">Forgot Password?</a></p>
-                    </form>
-                </div> 
-                <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 " data-toggle="modal" data-target="#exampleModal2" id="forlogin">Create one</a></div>
-            </div>
-            </div>
+
+
+
+  <div class="modal fade m-0 p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sign In</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         </div>
+        <div class="modal-body">
+          <form autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+              </div>
+            </div>
+            <div class="form-group d-flex justify-content-center align-items-center">
+              <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign In</button>
+            </div>
+            <hr>
+            <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+            <div class="icons">
+              <a href="#" class="login100-social-item bg3">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="login100-social-item bg3 gmail">
+                <img src="img/gmail.png" alt="">
+              </a>
+              <a href="#" class="login100-social-item bg3">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <p class="hint-text" style="font-size: 1.3rem;"><a href="#">Forgot Password?</a></p>
+          </form>
+        </div>
+        <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 "
+            data-toggle="modal" data-target="#exampleModal2" id="forlogin">Create one</a></div>
+      </div>
     </div>
+  </div>
+  </div>
   <div class="modal fade m-0 p-0" id="exampleModal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">				
-                    <h4 class="modal-title">Sign Up</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="email" class="form-control mx-5" name="email" placeholder="Email id" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="nnumber" class="form-control mx-5" name="mobile" placeholder="mobile no" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control mx-5" name="password" placeholder="Confram Password" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group d-flex justify-content-center align-items-center">
-                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign UP</button>
-                        </div>
-                        <hr>
-                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
-                          <h5 class="text-center mb-5" style="font-size: 1.6rem;">Signup with</h5>
-                        <div class="icons">
-                            <a href="#" class="login100-social-item bg3">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="login100-social-item bg3 gmail">
-                                <img src="img/gmail.png" alt="">
-                            </a>
-                            <a href="#" class="login100-social-item bg3">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        
-                    </form>
-                </div>
-                <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#exampleModal" id="forsignup" >Login Here</a></div>
-            </div>
-            </div>
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sign Up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         </div>
-    </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="email" class="form-control mx-5" name="email" placeholder="Email id" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="nnumber" class="form-control mx-5" name="mobile" placeholder="mobile no"
+                  required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+
+                <input type="text" class="form-control mx-5" name="password" placeholder="Confram Password"
+                  required="required">
+              </div>
+            </div>
+            <div class="form-group d-flex justify-content-center align-items-center">
+              <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign UP</button>
+            </div>
+            <hr>
+            <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+            <h5 class="text-center mb-5" style="font-size: 1.6rem;">Signup with</h5>
+            <div class="icons">
+              <a href="#" class="login100-social-item bg3">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="login100-social-item bg3 gmail">
+                <img src="img/gmail.png" alt="">
+              </a>
+              <a href="#" class="login100-social-item bg3">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2"
+            data-toggle="modal" data-target="#exampleModal" id="forsignup">Login Here</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
 
     $(document).ready(function () {
-      $('#forlogin').click(function(){
+      $('#forlogin').click(function () {
         $('#exampleModal').modal('hide');
       });
-      $('#forsignup').click(function(){
+      $('#forsignup').click(function () {
         $('#exampleModal2').modal('hide');
       });
       $(window).scroll(function () {
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
-     
-      $("#s1").focusin(function(){
-        $(this).children("label").css("color","#EC5B24");
+
+      $("#s1").focusin(function () {
+        $(this).children("label").css("color", "#EC5B24");
         $(this).children("underline").addClass("acti");
-       
+
 
       });
-      $("#s1").focusout(function(){
-        $(this).children("label").css("color","white");
+      $("#s1").focusout(function () {
+        $(this).children("label").css("color", "white");
         $(this).children("underline").removeClass("acti");
       });
-      $("#s2").focusin(function(){
-        $(this).children("label").css("color","#EC5B24");
-        
+      $("#s2").focusin(function () {
+        $(this).children("label").css("color", "#EC5B24");
+
 
       });
-      $("#s2").focusout(function(){
-        $(this).children("label").css("color","white")
+      $("#s2").focusout(function () {
+        $(this).children("label").css("color", "white")
       });
-      $("#s3").focusin(function(){
-        $(this).children("label").css("color","#EC5B24");
-        
+      $("#s3").focusin(function () {
+        $(this).children("label").css("color", "#EC5B24");
+
 
       });
-      $("#s3").focusout(function(){
-        $(this).children("label").css("color","white")
+      $("#s3").focusout(function () {
+        $(this).children("label").css("color", "white")
       });
-      $("#s4").focusin(function(){
-        $(this).children("label").css("color","#EC5B24");
-        
+      $("#s4").focusin(function () {
+        $(this).children("label").css("color", "#EC5B24");
+
 
       });
-      $("#s4").focusout(function(){
-        $(this).children("label").css("color","white")
+      $("#s4").focusout(function () {
+        $(this).children("label").css("color", "white")
       });
 
-      
+      $('.dropdown-toggle').dropdown();
 
     });
-   
+
+
+
 
     function w3_open() {
-        document.getElementById("mySidebar").style.display = "flex";
+      document.getElementById("mySidebar").style.display = "flex";
 
       dis = document.getElementsByClassName("onhover1");
       let atag = document.getElementsByClassName("w3-button  ");
@@ -255,17 +316,17 @@
           dis[i].style.display = "inline";
           atag[i].style.display = "inline";
 
-          
-            na[0].style.background = "white";
-          
+
+          na[0].style.background = "white";
+
         }
       } else {
         for (let i = 0; i < dis.length; i++) {
           dis[i].style.display = "none";
-          
-            atag[i].style.display = "none";
-            na[0].style.background = "transparent";
-          
+
+          atag[i].style.display = "none";
+          na[0].style.background = "transparent";
+
         }
       }
 
@@ -275,7 +336,7 @@
       document.getElementById("mySidebar").style.display = "none";
     }
 
-    
+
   </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

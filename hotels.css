@@ -287,3 +287,51 @@ header{
       color: white;
       font-size: 1.8rem;
 }
+
+.dropdown-menu{
+    width: 92%;
+   
+    
+    font-size: 1.8rem;
+}
+.dropdown-menu .trheaad{
+    background: #FEF9F7;
+    padding: 0;
+    width:100%!important;
+    font-weight: bold;
+    
+    
+
+}
+.dropdown-menu .trheaad span{
+    padding: 2rem 2rem;
+}
+.dropdown-menu #travelertype{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9rem;
+}
+.dropdown-menu #travelertype span{
+    padding-left: 1rem;
+}
+.dropdown-menu #guestlist{
+
+}
+.dropdown-menu #guestlist div p{
+
+}
+.dropdown-menu #guestlist .adult .hea{
+    display: inline;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    font-weight: 450;
+}
+ .heabody{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
