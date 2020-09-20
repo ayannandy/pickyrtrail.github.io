@@ -98,12 +98,12 @@
           <div class="adult">
             <div class="hea">Childs</div>
             <div class="heabody" id="chi">
-              <p class="activemem">0</p>
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
+              <p class="activemem" id="#ch0">0</p>
+              <p id="#ch1">1</p>
+              <p id="#ch2">2</p>
+              <p id="#ch3">3</p>
+              <p id="#ch4">4</p>
+              <p id="#ch5">5</p>
             </div>
           </div>
         </div>
@@ -122,6 +122,28 @@
     <div class="col-lg-2 col-12 ">
 
       <input type="button" value="Search" class="btn" id="searchbtn">
+    </div>
+  </div>
+  <div id="fliter" class="row mr-0 pr-0">
+    <div class="col-lg-3">
+      <div class=" dropdown-toggle"  
+       id="dropdownMenuButton" id="txt" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">sorted type</div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Suggested</a>
+        <a class="dropdown-item" href="#">price</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <span>Price</span>
+      <input type="range" name="price" id="price"  min="0" max="500000" value="10000">
+    </div>
+    <div class="col-lg-2">
+      <input type="checkbox" name="payment" id="pay">
+    </div>
+    <div class="col-lg-2 mr-0 pr-0">
+      ratings
     </div>
   </div>
   <div class="bg-danger" style="height: 1000px;">
@@ -263,7 +285,8 @@
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
-
+      
+      
       $("#s1").focusin(function () {
         $(this).children("label").css("color", "#EC5B24");
         $(this).children("underline").addClass("acti");
@@ -315,6 +338,12 @@
                 $(this).siblings().removeClass('activemem');
                 
                 $(this).addClass('activemem');
+            });
+
+            $("#ch0").click(function(){
+              let ch=$("#cho").val();
+
+              $("#room").attr("value","solo    2 Guests 1 Room")
             });
 
     });
