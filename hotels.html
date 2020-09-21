@@ -124,7 +124,8 @@
       <input type="button" value="Search" class="btn" id="searchbtn">
     </div>
   </div>
-  <div id="fliter" class="row mr-0 pr-0">
+  <!-- first row filtwr -->
+  <div id="fliter" class="row m-0 p-0">
     <div class="col-lg-3">
       <div class=" dropdown-toggle"  
        id="dropdownMenuButton" id="txt" data-toggle="dropdown"
@@ -143,11 +144,51 @@
       <input type="checkbox" name="payment" id="pay">
     </div>
     <div class="col-lg-2 mr-0 pr-0">
-      ratings
+      <p>rating</p>
+      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight()" id="more">More</button>
     </div>
+    
   </div>
-  <div class="bg-danger" style="height: 1000px;">
-
+  <!-- second row  filter-->
+  <div id="filter2" class=" m-0 p-0">
+    <div class="col-lg-3">
+      <div class=" dropdown-toggle"  
+       id="dropdownMenuButton" id="txt" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">sorted type</div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Suggested</a>
+        <a class="dropdown-item" href="#">price</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <span>Price</span>
+      <input type="range" name="price" id="price"  min="0" max="500000" value="10000">
+    </div>
+    <div class="col-lg-2">
+      <input type="checkbox" name="payment" id="pay">
+    </div>
+    <div class="col-lg-2 mr-0 pr-0">
+      <p>rating</p>
+      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight2()" id="more2">Less</button>
+    </div>
+    
+  </div>
+ 
+    
+  <div class="row p-0 m-0" style="height: 1000px;">
+    <div class="col-lg-8 p-0 m-0">
+      abc
+    </div>
+    <div class="col-lg-4 p-0 m-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin" width="50%" height="50%%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="col-lg-8 p-0 m-0">
+      abc
+    </div>
+    <div class="col-lg-4 p-0 m-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin" width="50%" height="50%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
   </div>
 
 
@@ -348,8 +389,21 @@
 
     });
 
+    
+    function change_hight(){
+      let c=document.getElementById("filter2");
+      c.classList.add("row");
+      document.getElementById("filter2").style.display="flex";
+      document.getElementById("more").style.display="none";
+      
+     }
+    function change_hight2(){
+      document.getElementById("filter2").style.display="none";
+      document.getElementById("filter2").classList.remove("row");
+      document.getElementById("more").style.display="block";
 
-
+      
+     }
 
     function w3_open() {
       document.getElementById("mySidebar").style.display = "flex";

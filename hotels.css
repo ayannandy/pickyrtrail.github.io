@@ -352,4 +352,34 @@ header{
     font-size: 1.8rem;
     padding-top: 3rem;
     padding-left: 1rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+#filter2{
+    width: 100%;
+    height: 10rem;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    display: none;
+    position: sticky;
+    top: 10rem;
+    background: green;
+}
+#more{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+#more2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+#more:hover{
+    background:red;
+    color: white;
 }
