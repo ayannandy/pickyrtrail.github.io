@@ -81,7 +81,7 @@
         </div>
         <div class="trheaad"> <span>Guests</span></div>
         <div id="guestlist">
-          <div class="adult" >
+          <div class="adult">
             <div class="hea">Adults</div>
             <div class="heabody" id="adu">
               <p onclick="val()" class="activemem">1</p>
@@ -127,34 +127,42 @@
   <!-- first row filtwr -->
   <div id="fliter" class="row m-0 p-0">
     <div class="col-lg-3">
-      <div class=" dropdown-toggle"  
-       id="dropdownMenuButton" id="txt" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">sorted type</div>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Suggested</a>
-        <a class="dropdown-item" href="#">price</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
+      sorted by :
+      <select name="sort" id="sort">
+        <option value="1"> Recomend</option>
+        <option value="1"> Suggested</option>
+        <option value="1"> Price</option>
+      </select>
     </div>
-    <div class="col-lg-5">
+    <div class="col-lg-4">
       <span>Price</span>
-      <input type="range" name="price" id="price"  min="0" max="500000" value="10000">
+      <input type="range" name="price" id="price" min="0" max="500000" value="10000"  data-toggle="tooltip" data-placement="top" title="Tooltip on top" style="width:80%;">
     </div>
-    <div class="col-lg-2">
-      <input type="checkbox" name="payment" id="pay">
+    <div class="col-lg-2" id="assured">
+      <input type="checkbox" name="payment" id="pay"><select name="typeofpay" id="top">
+        <option value="1">Pym Assurued</option>
+        <option value="2">Pym not Assurued</option>
+        <option value="3">Assurued</option>
+      </select>
     </div>
-    <div class="col-lg-2 mr-0 pr-0">
-      <p>rating</p>
-      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight()" id="more">More</button>
+    <div class="col-lg-3 mr-0 pr-0">
+      <p>User rating</p>
+      <span id="rati">
+        <div><span>1</span><i class="far  fa-star"></i></div>
+        <div><span>2</span><i class="far  fa-star"></i></div>
+        <div><span>3</span><i class="far  fa-star"></i></div>
+        <div><span>4</span><i class="far   fa-star"></i></div>
+        <div><span>5</span><i class="far  fa-star"></i></div>
+      </span>
+      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight()" id="more">More Filters</button>
     </div>
-    
+
   </div>
   <!-- second row  filter-->
   <div id="filter2" class=" m-0 p-0">
     <div class="col-lg-3">
-      <div class=" dropdown-toggle"  
-       id="dropdownMenuButton" id="txt" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">sorted type</div>
+      <div class=" dropdown-toggle" id="dropdownMenuButton" id="txt2" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">srted type:Recomended</div>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="#">Suggested</a>
         <a class="dropdown-item" href="#">price</a>
@@ -162,32 +170,34 @@
       </div>
     </div>
     <div class="col-lg-5">
-      <span>Price</span>
-      <input type="range" name="price" id="price"  min="0" max="500000" value="10000">
+      <span>Distance</span>
+      <input type="range" name="price" id="price" min="0" max="500000" value="10000">
     </div>
     <div class="col-lg-2">
       <input type="checkbox" name="payment" id="pay">
     </div>
     <div class="col-lg-2 mr-0 pr-0">
       <p>rating</p>
-      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight2()" id="more2">Less</button>
+
+      <button class="btn btn-outline-danger btn-large mb-1" onclick="change_hight2()" id="more2">Less Filter</button>
     </div>
-    
+
   </div>
- <!-- for hotel lists  start-->
-    
-  <div class="row p-0 m-0 px-5" >
+  <!-- for hotel lists  start-->
+
+  <div class="row p-0 m-0 px-5">
     <div class="col-lg-9 p-0 m-0 pt-3">
       <div class="details  mx-5 row">
         <div class="col-lg-4 col-sm-12">
           <!-- carosel of images  -->
-          <div id="carouselExampleControls"  class="carousel slide" data-interval="false">
+          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water" alt="Second slide">
+                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water"
+                  alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/tr.jpg" alt="Third slide">
@@ -203,9 +213,9 @@
             </a>
           </div>
 
-        </div>  
+        </div>
         <div class="col-lg-6 col-sm-8" id="descrip">
-          <h2 >Hotel Name </h2>
+          <h2>Hotel Name </h2>
           <p>Location</p>
           <span>
             <i class="far fa-2x fa-star"></i>
@@ -220,7 +230,7 @@
             <div><i class="fas  fa-parking"></i><span>Parking</span></div>
             <div><i class="fas  fa-swimming-pool"></i><span>Swiming Pull</span></div>
           </div>
-        </div>  
+        </div>
         <div class="col-lg-2 col-sm-4 third_container">
           <p id="p1" class="mt-5">save INR 1,500</p>
           <p id="p2">INR3,000</p>
@@ -228,31 +238,35 @@
           <p id="p4">per night</p>
           <p id="p5"><i class="fas fa-circle"></i>Free cancelation</p>
           <p id="p6"><i class="fas fa-circle"></i>Pay at Hotel</p>
-        </div>  
+        </div>
 
       </div>
     </div>
     <div class="col-lg-3 p-0 m-0 p-3">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin"
+        width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen=""
+        aria-hidden="false" tabindex="0"></iframe>
     </div>
-    
+
   </div>
 
-<!-- for hotel lists  end-->
- <!-- for hotel lists  start-->
-    
-  <div class="row p-0 m-0 px-5" >
+  <!-- for hotel lists  end-->
+  <!-- for hotel lists  start-->
+
+  <div class="row p-0 m-0 px-5">
     <div class="col-lg-9 p-0 m-0 pt-3">
       <div class="details  mx-5 row">
         <div class="col-lg-4 col-sm-12">
           <!-- carosel of images  -->
-          <div id="carouselExampleControls"  class="carousel slide" data-interval="false">
+          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water" alt="Second slide">
+                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water"
+                  alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/tr.jpg" alt="Third slide">
@@ -268,9 +282,9 @@
             </a>
           </div>
 
-        </div>  
+        </div>
         <div class="col-lg-6 col-sm-8" id="descrip">
-          <h2 >Hotel Name </h2>
+          <h2>Hotel Name </h2>
           <p>Location</p>
           <span>
             <i class="far fa-2x fa-star"></i>
@@ -285,7 +299,7 @@
             <div><i class="fas  fa-parking"></i><span>Parking</span></div>
             <div><i class="fas  fa-swimming-pool"></i><span>Swiming Pull</span></div>
           </div>
-        </div>  
+        </div>
         <div class="col-lg-2 col-sm-4 third_container">
           <p id="p1" class="mt-5">save INR 1,500</p>
           <p id="p2">INR3,000</p>
@@ -293,31 +307,35 @@
           <p id="p4">per night</p>
           <p id="p5"><i class="fas fa-circle"></i>Free cancelation</p>
           <p id="p6"><i class="fas fa-circle"></i>Pay at Hotel</p>
-        </div>  
+        </div>
 
       </div>
     </div>
     <div class="col-lg-3 p-0 m-0 p-3">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin"
+        width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen=""
+        aria-hidden="false" tabindex="0"></iframe>
     </div>
-    
+
   </div>
 
-<!-- for hotel lists  end-->
-<!-- for hotel lists 2nd start-->
+  <!-- for hotel lists  end-->
+  <!-- for hotel lists 2nd start-->
 
-  <div class="row p-0 m-0 px-5" >
+  <div class="row p-0 m-0 px-5">
     <div class="col-lg-9 p-0 m-0 pt-3">
       <div class="details  mx-5 row">
         <div class="col-lg-4 col-sm-12">
           <!-- carosel of images  -->
-          <div id="carouselExampleControls"  class="carousel slide" data-interval="false">
+          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water" alt="Second slide">
+                <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/1600x900/?nature,water"
+                  alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="img/tr.jpg" alt="Third slide">
@@ -333,9 +351,9 @@
             </a>
           </div>
 
-        </div>  
+        </div>
         <div class="col-lg-6 col-sm-8" id="descrip">
-          <h2 >Hotel Name </h2>
+          <h2>Hotel Name </h2>
           <p>Location</p>
           <span>
             <i class="far fa-2x fa-star"></i>
@@ -350,7 +368,7 @@
             <div><i class="fas  fa-parking"></i><span>Parking</span></div>
             <div><i class="fas  fa-swimming-pool"></i><span>Swiming Pull</span></div>
           </div>
-        </div>  
+        </div>
         <div class="col-lg-2 col-sm-4 third_container">
           <p id="p1" class="mt-5">save INR 1,500</p>
           <p id="p2">INR3,000</p>
@@ -358,17 +376,20 @@
           <p id="p4">per night</p>
           <p id="p5"><i class="fas fa-circle"></i>Free cancelation</p>
           <p id="p6"><i class="fas fa-circle"></i>Pay at Hotel</p>
-        </div>  
+        </div>
 
       </div>
     </div>
     <div class="col-lg-3 p-0 m-0 p-3">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin"
+        width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen=""
+        aria-hidden="false" tabindex="0"></iframe>
     </div>
-    
+
   </div>
-<!-- for hotel lists second end-->
-  
+  <!-- for hotel lists second end-->
+
 
 
 
@@ -505,8 +526,8 @@
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
       });
-      
-      
+
+
       $("#s1").focusin(function () {
         $(this).children("label").css("color", "#EC5B24");
         $(this).children("underline").addClass("acti");
@@ -545,44 +566,47 @@
       $('.dropdown-toggle').dropdown();
 
       $("#adu p").on('click', function () {
-                $(this).siblings().removeClass('activemem');
-                
-                $(this).addClass('activemem');
-            });
+        $(this).siblings().removeClass('activemem');
+
+        $(this).addClass('activemem');
+      });
       $("#chi p").on('click', function () {
-                $(this).siblings().removeClass('activemem');
-                
-                $(this).addClass('activemem');
-            });
+        $(this).siblings().removeClass('activemem');
+
+        $(this).addClass('activemem');
+      });
       $("#room p").on('click', function () {
-                $(this).siblings().removeClass('activemem');
-                
-                $(this).addClass('activemem');
-            });
+        $(this).siblings().removeClass('activemem');
 
-            $("#ch0").click(function(){
-              let ch=$("#cho").val();
+        $(this).addClass('activemem');
+      });
 
-              $("#room").attr("value","solo    2 Guests 1 Room")
-            });
+      $("#ch0").click(function () {
+        let ch = $("#cho").val();
+
+        $("#room").attr("value", "solo    2 Guests 1 Room")
+      });
+
+
+
 
     });
 
-    
-    function change_hight(){
-      let c=document.getElementById("filter2");
-      c.classList.add("row");
-      document.getElementById("filter2").style.display="flex";
-      document.getElementById("more").style.display="none";
-      
-     }
-    function change_hight2(){
-      document.getElementById("filter2").style.display="none";
-      document.getElementById("filter2").classList.remove("row");
-      document.getElementById("more").style.display="block";
 
-      
-     }
+    function change_hight() {
+      let c = document.getElementById("filter2");
+      c.classList.add("row");
+      document.getElementById("filter2").style.display = "flex";
+      document.getElementById("more").style.display = "none";
+
+    }
+    function change_hight2() {
+      document.getElementById("filter2").style.display = "none";
+      document.getElementById("filter2").classList.remove("row");
+      document.getElementById("more").style.display = "block";
+
+
+    }
 
     function w3_open() {
       document.getElementById("mySidebar").style.display = "flex";
