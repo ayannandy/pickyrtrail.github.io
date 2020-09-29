@@ -496,6 +496,15 @@ header{
     padding-right: 1rem;
 }
 @media screen and (max-width: 776px) {
+    .login{
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1.5rem!important;
+        font-weight: 500;
+    
+    }
+
+
     #carouselExampleControls{
         margin-top: 0!important;
         height: 100%;
