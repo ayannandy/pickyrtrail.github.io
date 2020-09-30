@@ -39,12 +39,27 @@
     </button>
 
   </nav>
+  <!-- only for mobile view  -->
+  <div class="mob_search">
+    <div id="mob">
+      <p id="para">Place</p>
+      <p>cheakin-Cheakout rooms, guests</p>
+    </div>
+    <div>
+      <button class="btn btn-outline-danger" id="mob_edit" onclick="show_search()">
+        <i class="far fa-edit"></i>
+        <p>edit</p>
+      </button>
+    </div>
 
+  </div>
+
+
+  <!-- only for mobile view  -->
   <div id="searchbar" class="row p-0 m-0">
     <div class="col-lg-3 col-12 dropdown" id="s1">
       <label for="place">Where</label>
-      <span></span>
-      <input type="text" name="destination" autocomplete="off" class="no_outline dropdown-toggle" id="destination"
+            <input type="text" name="destination" autocomplete="off" class="no_outline dropdown-toggle" id="destination"
         placeholder="Enter Destination or Hotel Name" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
       <span class="underline"></span>
@@ -130,6 +145,7 @@
   </div>
   <!-- first row filtwr -->
   <div id="fliter" class="row m-0 p-0">
+    <button class="btn btn-outline-danger" onclick="fil_h_c()" id="btn_filter">Filters<i class="fas fa-sort-amount-down-alt ml-1"></i></button>
     <div class="col-lg-3">
       sorted by :
       <select name="sort" id="sort">
@@ -394,7 +410,13 @@
       });
 
       $("#searchbtn").click(function () {
-       
+       $("#searchbar").css("display","none");
+       $("#mob").css("display","block");
+       $("#mob_edit").css("display","block");
+       let des=$("#destination").val();
+       console.log(des);
+       $("#para").text(des);
+
        let c=5;
        let i=1;
        for (i;i<c;i++){
@@ -427,7 +449,7 @@
           </div>
 
         </div>
-        <div class="col-lg-6 col-sm-8" id="descrip">
+        <div class="col-lg-6 col-md-8" id="descrip">
           <h2>Hotel Name ${i} </h2>
           <p>Location</p>
           <span>
@@ -444,13 +466,18 @@
             <div><i class="fas  fa-swimming-pool"></i><span>Swiming Pull</span></div>
           </div>
         </div>
-        <div class="col-lg-2 col-sm-4 third_container">
-          <p id="p1" class="mt-5">save INR 1,500</p>
+        <div class="col-lg-2 col-md-4 third_container">
+          <div><p id="p1" class="mt-5">save INR 1,500</p>
           <p id="p2">INR3,000</p>
           <p id="p3">INR1,500</p>
           <p id="p4">per night</p>
+          </div>
+         <div>
           <p id="p5"><i class="fas fa-circle"></i>Free cancelation</p>
           <p id="p6"><i class="fas fa-circle"></i>Pay at Hotel</p>
+          
+
+          </div>
         </div>
 
       </div>
@@ -519,6 +546,32 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
+let toggle = true;
+function fil_h_c(){
+  let filter3=document.getElementById("fliter");
+  let filter4=document.getElementById("filter2");
+  if(toggle==true){
+    toggle=false;
+    filter3.style.height="20rem";
+    
+  }else{
+    toggle=true;
+    filter3.style.height="4rem";
+    filter4.style.display="none";
+    document.getElementById("more").style.display = "block";
+  }
+}
+function show_search(){
+  let mob=document.getElementById("mob");
+  let btn=document.getElementById("mob_edit");
+  
+  let real = document.getElementById("searchbar");
+  btn.style.display="none";
+  real.style.display = "flex";
+  real.style.height = "33rem";
+  mob.style.display = "none";
+
+}
 
 
 

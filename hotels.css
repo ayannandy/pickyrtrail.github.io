@@ -9,20 +9,7 @@ html{
 :root{
     --color:#EC5B24;
 }
-header{
-    height: 40rem;
-    background-image: url("img/banner.jpg");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    /* background-attachment: fixed; */
-    display: grid;
-    place-items: center;
-   
 
-}
 .cross{
     text-align: right;
 }
@@ -30,7 +17,7 @@ header{
     height: 6rem;
     font-size: 2rem;
     position: relative;
-    
+    width:100vw;
     text-align: left;
     z-index:1000 ;
 }
@@ -197,12 +184,17 @@ header{
 
 /* search bar  */
 
+.mob_search{
+    display: none;
+}
+
 #searchbar{
     background: linear-gradient(45deg,#721053,#AD2E41);
     width: auto;
     height: 8rem;
     align-items: center;
     display: flex;
+    overflow: hidden;
     
 }
 #searchbar input[type="text"]{
@@ -495,6 +487,17 @@ header{
     
     padding-right: 1rem;
 }
+#btn_filter{
+    display: none;
+}
+
+#btn_map{
+    display: none;
+}
+.mob_search{
+    display: none;
+}
+
 @media screen and (max-width: 776px) {
     .login{
         font-size: 1.8rem;
@@ -510,12 +513,139 @@ header{
         height: 100%;
         width: 100%;
     }
-    #descrip #offer div span{
-        font-size: 1.4rem;
-        padding-left: 0.2rem;
+
+
+    /* for search bar */
+    #searchbar{
+        display: none;
+    }
+    .mob_search{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    #para{
+        font-weight: bold;
+        font-size: 1.6;
+        margin-bottom: 0!important;
+    }
+    #mob_edit{
+        border: none!important;
     }
     #descrip #offer div i{
         font-size: 1.2rem;
     }
+
+    
+
+    /* for all hotel lists */
+
+    .details{
+        margin: 0 0 !important;
+        padding-top:1rem;
+        }
+
+
+        /* for filter */
+        #fliter{
+            height: 4rem;
+            padding-top: 1rem!important;
+        }
+        #btn_filter{
+            display: block;
+        }
+        #btn_map{
+            display: block;
+            bottom: 1rem;
+            right: 1rem;
+            position: absolute;
+
+        }
+        #filter2{
+            height: 15rem;
+            top: 20rem!important;
+        }
+
+        #descrip{
+            margin-top: 3rem!important;
+        }
+        #descrip h2{
+            font-size: 1.8rem;
+        }
+        #descrip p{
+            font-size: 1.4rem;
+        }
+        #descrip #rateing{
+            font-size: 1.0rem;
+            padding-left: 0.5rem;
+        }
+        #descrip #offer{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        #descrip #offer div{
+            padding: 1rem 1rem;
+        }
+        #descrip #offer div span{
+            font-size: 1.2rem;
+            padding-left: 0.5rem;
+        }
+        #descrip #offer div i{
+            font-size: 1.4rem;
+        }
+
+        .third_container{
+            position: relative;
+            background: #ddfcf2;
+            display: flex;
+            justify-content: space-around;
+        }
+        .third_container #p1{
+            font-size: 1.5rem;
+            color: red;
+            text-align: right;
+            margin-top: 0.5rem!important;
+            padding-bottom: 0rem!important;
+            margin-bottom: 0rem!important;
+        }
+        
+        .third_container #p2{
+            font-size: 1.4rem;
+            text-decoration: line-through;
+            text-align: right;
+            color: #4a4a4a;
+            padding-bottom: 0rem!important;
+            margin-bottom: 0rem!important;
+        }
+        .third_container #p3{
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding-bottom: 0rem!important;
+            text-align: right;
+            margin-bottom: 0rem!important;        
+        }
+        .third_container #p4{
+            font-size: 1.0rem;
+            text-align: right;
+            padding-bottom: 0rem!important;
+        }
+            .third_container #p5{
+                font-size: 1.1rem;
+                margin-top: 0rem!important;
+            }
+        .third_container #p5 i{
+            
+            padding-right: 1rem;
+        }
+        .third_container #p6{
+            font-size: 1.1rem;
+        }
+        .third_container #p6 i{
+            
+            padding-right: 1rem;
+        }
+
+
 }
 
