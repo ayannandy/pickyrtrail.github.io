@@ -645,6 +645,17 @@ html{
             
             padding-right: 1rem;
         }
+        #mai{
+            position: relative;
+            background: #fff;
+        }
+        #map{
+        position: absolute!important;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+        }
 
 
 }
