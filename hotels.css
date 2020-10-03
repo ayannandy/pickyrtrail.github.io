@@ -497,6 +497,15 @@ html{
 .mob_search{
     display: none;
 }
+.showmap{
+    display: none;
+}
+.clmap{
+    display: none;
+}
+.carousel{
+    margin-top: 2rem;
+}
 
 @media screen and (max-width: 776px) {
     .login{
@@ -660,7 +669,11 @@ html{
         /* display: none; */
         
         }
+        .showmap{
+            display: block;
+        }
         .clmap{
+            display: block;
             z-index: 1000;
             position: absolute;
             right: 1rem;
