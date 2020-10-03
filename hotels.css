@@ -532,6 +532,9 @@ html{
         display: flex;
         justify-content: space-between;
         padding: 0 1rem;
+        background-color: #D8E0E6;
+        align-items: center;
+        padding-top: 1rem;
     }
     #para{
         font-weight: bold;
@@ -542,7 +545,7 @@ html{
         border: none!important;
     }
     #descrip #offer div i{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     
