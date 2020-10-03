@@ -11,7 +11,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="hotels.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Hello, world!</title>
   <style>
 
@@ -59,7 +59,7 @@
   <div id="searchbar" class="row p-0 m-0">
     <div class="col-lg-3 col-12 dropdown" id="s1">
       <label for="place">Where</label>
-            <input type="text" name="destination" autocomplete="off" class="no_outline dropdown-toggle" id="destination"
+      <input type="text" name="destination" autocomplete="off" class="no_outline dropdown-toggle" id="destination"
         placeholder="Enter Destination or Hotel Name" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
       <span class="underline"></span>
@@ -89,63 +89,64 @@
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 150%;">
         <div class="trheaad"> <span>Travelling as</span></div>
         <form action="#">
-        <div id="travelertype">
-          <div><input type="radio" name="traveler" id="t1"><span>solo</span></div>
-          <div><input type="radio" name="traveler" id="t2"><span>couple</span></div>
-          <div><input type="radio" name="traveler" id="t3"><span>Business</span></div>
-          <div><input type="radio" name="traveler" id="t4"><span>Friends</span></div>
-          <div><input type="radio" name="traveler" id="t5"><span>Family</span></div>
-        </div>
-        <div class="trheaad"> <span>Guests</span></div>
-        <div id="guestlist">
-          <div class="adult">
-            <div class="hea">Adults</div>
-            <div class="heabody" id="adu">
-              <p onclick="val()" class="activemem">1</p>
-              <p onclick="val()">2</p>
-              <p onclick="val()">3</p>
-              <p onclick="val()">4</p>
-              <p onclick="val()">5</p>
-              <p onclick="val()">6</p>
-              <p onclick="val()">7</p>
-              <p onclick="val()">8</p>
-              <p onclick="val()">9</p>
+          <div id="travelertype">
+            <div><input type="radio" name="traveler" id="t1"><span>solo</span></div>
+            <div><input type="radio" name="traveler" id="t2"><span>couple</span></div>
+            <div><input type="radio" name="traveler" id="t3"><span>Business</span></div>
+            <div><input type="radio" name="traveler" id="t4"><span>Friends</span></div>
+            <div><input type="radio" name="traveler" id="t5"><span>Family</span></div>
+          </div>
+          <div class="trheaad"> <span>Guests</span></div>
+          <div id="guestlist">
+            <div class="adult">
+              <div class="hea">Adults</div>
+              <div class="heabody" id="adu">
+                <p onclick="val()" class="activemem">1</p>
+                <p onclick="val()">2</p>
+                <p onclick="val()">3</p>
+                <p onclick="val()">4</p>
+                <p onclick="val()">5</p>
+                <p onclick="val()">6</p>
+                <p onclick="val()">7</p>
+                <p onclick="val()">8</p>
+                <p onclick="val()">9</p>
+              </div>
+            </div>
+            <div class="adult">
+              <div class="hea">Childs</div>
+              <div class="heabody" id="chi">
+                <p class="activemem" id="#ch0">0</p>
+                <p id="#ch1">1</p>
+                <p id="#ch2">2</p>
+                <p id="#ch3">3</p>
+                <p id="#ch4">4</p>
+                <p id="#ch5">5</p>
+              </div>
             </div>
           </div>
-          <div class="adult">
-            <div class="hea">Childs</div>
-            <div class="heabody" id="chi">
-              <p class="activemem" id="#ch0">0</p>
-              <p id="#ch1">1</p>
-              <p id="#ch2">2</p>
-              <p id="#ch3">3</p>
-              <p id="#ch4">4</p>
-              <p id="#ch5">5</p>
+          <div class="trheaad"><span> Rooms</span></div>
+          <div>
+
+            <div class="heabody" id="room">
+              <p class="activemem">1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
             </div>
           </div>
-        </div>
-        <div class="trheaad"><span> Rooms</span></div>
-        <div>
 
-          <div class="heabody" id="room">
-            <p class="activemem">1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-          </div>
-        </div>
 
-        
       </div>
     </div>
     <div class="col-lg-2 col-12 ">
 
-      <input type="button" value="Search" class="btn" id="searchbtn" >
+      <input type="button" value="Search" class="btn" id="searchbtn">
     </div>
   </div>
   <!-- first row filtwr -->
   <div id="fliter" class="row m-0 p-0">
-    <button class="btn btn-outline-danger my-2" onclick="fil_h_c()" id="btn_filter">Filters<i class="fas fa-sort-amount-down-alt ml-1"></i></button>
+    <button class="btn btn-outline-danger my-2" onclick="fil_h_c()" id="btn_filter">Filters<i
+        class="fas fa-sort-amount-down-alt ml-1"></i></button>
     <div class="col-lg-3">
       sorted by :
       <select name="sort" id="sort">
@@ -156,7 +157,8 @@
     </div>
     <div class="col-lg-4">
       <span>Price</span>
-      <input type="range" name="price" id="price" min="0" max="500000" value="10000"  data-toggle="tooltip" data-placement="top" title="Tooltip on top" style="width:80%;">
+      <input type="range" name="price" id="price" min="0" max="500000" value="10000" data-toggle="tooltip"
+        data-placement="top" title="Tooltip on top" style="width:80%;">
     </div>
     <div class="col-lg-2" id="assured">
       <input type="checkbox" name="payment" id="pay"><select name="typeofpay" id="top">
@@ -205,15 +207,15 @@
   </div>
   <!-- for hotel lists  start-->
   <div id="hotel_list">
-    
-  </div>
-  
-    
 
-  
+  </div>
+
+
+
+
 
   <!-- for hotel lists  end-->
-  
+
 
 
 
@@ -294,6 +296,7 @@
 
                 <input type="nnumber" class="form-control mx-5" name="mobile" placeholder="mobile no"
                   required="required">
+                  
               </div>
             </div>
             <div class="form-group">
@@ -410,23 +413,23 @@
       });
 
       $("#searchbtn").click(function () {
-       $("#searchbar").css("display","none");
-       $("#mob").css("display","block");
-       $("#mob_edit").css("display","block");
-       let des=$("#destination").val();
-       console.log(des);
-       $("#para").text(des);
+        $("#searchbar").css("display", "none");
+        $("#mob").css("display", "block");
+        $("#mob_edit").css("display", "block");
+        let des = $("#destination").val();
+        console.log(des);
+        $("#para").text(des);
 
-       let c=5;
-       let i=1;
-       for (i;i<c;i++){
-        $("#hotel_list").append(` <div class="row p-0 m-0 px-5" id="mai" >
+        let c = 5;
+        let i = 1;
+        for (i; i < c; i++) {
+          $("#hotel_list").append(` <div class="row p-0 m-0 px-5 mai" " >
            
-        <div class="col-lg-9 p-0 m-0 pt-3">
+        <div class="col-lg-9 p-0 m-0 pt-3  pb-4 "  id="ele${i}" >
       <div class="details  mx-5 row">
         <div class="col-lg-4 col-sm-12">
           <!-- carosel of images  -->
-          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+          <div id="carouselExampleControls${i}" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner.jpg" alt="First slide">
@@ -439,11 +442,11 @@
                 <img class="d-block w-100" src="img/tr.jpg" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls${i}" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls${i}" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -476,6 +479,8 @@
          <div>
           <p id="p5"><i class="fas fa-circle"></i>Free cancelation</p>
           <p id="p6"><i class="fas fa-circle"></i>Pay at Hotel</p>
+
+          <button class="btn btn-outline-danger mt-2 ml-2" id="showmap" onclick="showmap(${i},${c})" >View map</button>
           
 
           </div>
@@ -483,27 +488,29 @@
 
       </div>
     </div>
-    <div class="col-lg-3 p-0 m-0 p-3" id="map">
-      <iframe 
+    <div class="col-lg-3 p-0 m-0 p-3  maps"  id="map${i}">
+      <iframe  
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin"
         width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen=""
         aria-hidden="false" tabindex="0"></iframe>
+        <button class="btn btn-dark mt-2 ml-2 clmap" id="cl${i}"  onclick="closemap(${i})" >X</button>
+        
     </div>
   </div>`);
-       }
+        }
       });
 
 
-      $(document).mouseup(function(e){
-        if($(window).width()<700){
-          if($(e.target).closest("#searchbar").length===0){
-          $("#searchbar").hide();
-          $("#mob").css("display","block");
-       $("#mob_edit").css("display","block");
-        }
+      $(document).mouseup(function (e) {
+        if ($(window).width() < 700) {
+          if ($(e.target).closest("#searchbar").length === 0) {
+            $("#searchbar").hide();
+            $("#mob").css("display", "block");
+            $("#mob_edit").css("display", "block");
+          }
         }
       });
-      
+
 
 
 
@@ -512,7 +519,29 @@
 
 
 
+    function showmap(e,f){
+      let maps=document.getElementById("map"+e);
+      let ele = document.getElementById("ele"+e);
+      
+      maps.style.zIndex="3";
+      ele.style.paddingBottom="3px!important";
+      for(let i=1;i<f;i++){
+        if(e==i){
+          continue;
+        }else{
+          execesele=document.getElementById("map"+i);
+          execesele.style.zIndex="-1";
+          execesele.style.tr="-1";
+        }
+      }
+      
 
+    }
+    function closemap(e){
+      let maps=document.getElementById("map"+e);
+      let ele = document.getElementById("ele"+e)
+      maps.style.zIndex="-2";
+    }
 
     function change_hight() {
       let c = document.getElementById("filter2");
@@ -559,39 +588,39 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
-let toggle = true;
-function fil_h_c(){
-  let filter3=document.getElementById("fliter");
-  let filter4=document.getElementById("filter2");
-  if(toggle==true){
-    toggle=false;
-    filter3.style.height="20rem";
+    let toggle = true;
+    function fil_h_c() {
+      let filter3 = document.getElementById("fliter");
+      let filter4 = document.getElementById("filter2");
+      if (toggle == true) {
+        toggle = false;
+        filter3.style.height = "20rem";
+
+      } else {
+        toggle = true;
+        filter3.style.height = "4rem";
+        filter4.style.display = "none";
+        document.getElementById("more").style.display = "block";
+      }
+    }
+    function show_search() {
+      let mob = document.getElementById("mob");
+      let btn = document.getElementById("mob_edit");
+
+      let real = document.getElementById("searchbar");
+      btn.style.display = "none";
+      real.style.display = "flex";
+      real.style.height = "33rem";
+      mob.style.display = "none";
+
+    }
+
     
-  }else{
-    toggle=true;
-    filter3.style.height="4rem";
-    filter4.style.display="none";
-    document.getElementById("more").style.display = "block";
-  }
-}
-function show_search(){
-  let mob=document.getElementById("mob");
-  let btn=document.getElementById("mob_edit");
-  
-  let real = document.getElementById("searchbar");
-  btn.style.display="none";
-  real.style.display = "flex";
-  real.style.height = "33rem";
-  mob.style.display = "none";
-
-}
-
-
 
   </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
