@@ -341,7 +341,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-
+function closemap(e){
+      let maps=document.getElementById("map"+e);
+      let ele = document.getElementById("ele"+e)
+      maps.style.zIndex="-2";
+    }
     $(document).ready(function () {
 
 
@@ -354,6 +358,7 @@
       $(window).scroll(function () {
         $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
         $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
+        $(".maps").css("z-index","-4");
       });
 
 
@@ -507,6 +512,7 @@
             $("#searchbar").hide();
             $("#mob").css("display", "block");
             $("#mob_edit").css("display", "block");
+            $(".maps").css("z-index","-4");
           }
         }
       });
@@ -537,11 +543,7 @@
       
 
     }
-    function closemap(e){
-      let maps=document.getElementById("map"+e);
-      let ele = document.getElementById("ele"+e)
-      maps.style.zIndex="-2";
-    }
+    
 
     function change_hight() {
       let c = document.getElementById("filter2");
