@@ -43,7 +43,7 @@
   <div class="mob_search">
     <div id="mob">
       <p id="para">Place</p>
-      <p>cheakin-Cheakout rooms, guests</p>
+      <p><span id="ckin">cheakin</span> - <span id="ckout">Cheakout</span> <span id="rm">rooms</span>, <span id="guest">guests</span></p>
     </div>
     <div>
       <button class="btn btn-outline-danger" id="mob_edit" onclick="show_search()">
@@ -493,7 +493,7 @@ function closemap(e){
 
       </div>
     </div>
-    <div class="col-lg-3 p-0 m-0 p-3  maps"  id="map${i}">
+    <div class="col-lg-3  m-0   maps"  id="map${i}">
       <iframe  
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59406.216841684094!2d88.30036417925857!3d22.564014577400023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278462501ef55%3A0xf678fc64df883e2a!2sFortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1600690226380!5m2!1sen!2sin"
         width="100%" height="100%" frameborder="0" style="border:0;object-fit: cover;" allowfullscreen=""
@@ -537,7 +537,7 @@ function closemap(e){
         }else{
           execesele=document.getElementById("map"+i);
           execesele.style.zIndex="-1";
-          execesele.style.tr="-1";
+          
         }
       }
       
